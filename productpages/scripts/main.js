@@ -78,6 +78,8 @@ function append(data,parent)
             var cart_arr = JSON.parse(localStorage.getItem("cart_arr"))||[]
             cart_arr.push(e)
             localStorage.setItem("cart_arr",JSON.stringify(cart_arr))
+           
+            alert(`Add To Cart Successfull`)
         })
         
         cart.setAttribute("id","cart")
