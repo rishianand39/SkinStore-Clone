@@ -15,14 +15,13 @@ async function MakeApiCall(url)
 }
 // MakeApiCall("http://makeup-api.herokuapp.com/api/v1/products.json?product_type=lipstick");
 // MakeApiCall(`https://makeup-api.herokuapp.com/api/v1/products.json?product_type=foundation`);
- MakeApiCall("http://makeup-api.herokuapp.com/api/v1/products.json?");
+//  MakeApiCall("http://makeup-api.herokuapp.com/api/v1/products.json?");
+MakeApiCall("https://taobao-api.p.rapidapi.com/api?api=item_search&page_size=40&q=skincare");
  function appenddata(data,parent){
      console.log("data",data);
   data.forEach((element)=> {
-      if(element.category!=="")
-      {
-
-   
+    //   if(element.category!=="")
+    //   {   
     let div=document.createElement("div");
     div.style.padding="6px";
     let image=document.createElement("img");
@@ -52,11 +51,13 @@ async function MakeApiCall(url)
     buttonb.style.width="100%";
     buttonb.style.padding="10px 10px";
     buttondiv.append(buttonb);
+    let id=document.createElement("p");
+    id.innerHTML=element.id;
 
 
    
-    div.append(image,name,t,reating,price,buttonb);
+    div.append(image,name,t,reating,price,buttonb,id);
     parent.append(div);
-      }
+    //   }
   });
  }
