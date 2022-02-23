@@ -31,7 +31,7 @@ nav {
 }
 
 
-/* ---------------form--------------------------  */
+/*---------------form--------------------------  */
 
 #register-form {
     display: flex;
@@ -48,18 +48,8 @@ form {
     flex-direction: column;
 }
 
-#name,
-#email,
-#con-email,
-#con-password {
+input {
     margin: 5px 0 25px;
-    font-size: 18px;
-    padding: 15px 20px;
-}
-
-#password,
-#number,
-#ref-code {
     font-size: 18px;
     padding: 15px 20px;
 }
@@ -147,4 +137,8 @@ input[type="submit"]:hover {
         width: 153px;
         margin-bottom: 10px;
     }
+}
+
+.message {
+    color: red;
 }
