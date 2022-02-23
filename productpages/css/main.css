@@ -69,6 +69,11 @@
   color: red;
 }
 
-
+#priceSort1 {
+  width: 15%;
+  margin-left: 1%;
+  padding: 10px;
+  font-family: sans-serif;
+}
 
 

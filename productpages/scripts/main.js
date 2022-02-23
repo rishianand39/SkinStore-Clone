@@ -12,6 +12,7 @@ async function APIcall(url)
 
 function append(data,parent)
 {
+    parent.textContent = ""
     data.map(function(e){
 
 
