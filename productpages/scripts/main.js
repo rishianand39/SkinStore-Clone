@@ -18,6 +18,16 @@ function append(data,parent)
 
         let div = document.createElement("div")
         div.setAttribute("id","singleproduct")
+        div.addEventListener("click",function()
+        {
+         
+
+            var info = []
+            info.push(e)
+            localStorage.setItem("info",JSON.stringify(info))
+            window.location.href="info.html"
+
+        })
         let image = document.createElement("img")
         image.src = e.api_featured_image
         image.setAttribute("id","image")
