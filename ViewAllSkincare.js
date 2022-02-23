@@ -13,10 +13,16 @@ async function MakeApiCall(url)
        console.log("error",error);
     }
 }
- MakeApiCall("http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline");
+// MakeApiCall("http://makeup-api.herokuapp.com/api/v1/products.json?product_type=lipstick");
+// MakeApiCall(`https://makeup-api.herokuapp.com/api/v1/products.json?product_type=foundation`);
+ MakeApiCall("http://makeup-api.herokuapp.com/api/v1/products.json?");
  function appenddata(data,parent){
      console.log("data",data);
   data.forEach((element)=> {
+      if(element.category!=="")
+      {
+
+   
     let div=document.createElement("div");
     div.style.padding="6px";
     let image=document.createElement("img");
@@ -24,6 +30,8 @@ async function MakeApiCall(url)
     // image.style.hover=element.product_link;
     let name=document.createElement("p");
     name.innerHTML=element.name;
+    name.style.overflow="hidden";
+    name.style.height="8%";
     let t=document.createElement("p");
     let type=document.createElement("span");
     type.innerHTML=element.product_type;
@@ -49,6 +57,6 @@ async function MakeApiCall(url)
    
     div.append(image,name,t,reating,price,buttonb);
     parent.append(div);
-      
+      }
   });
  }
