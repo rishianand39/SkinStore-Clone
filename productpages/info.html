@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Information</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+        #infocontainer{
+            display:  flex;
+            width: 80%;
+            /* border: 1px solid red; */
+            margin: auto;
+            /* justify-content: space-between; */
+            padding: 10px;
+        }
+
+        #bigimage{
+            width: 1000px;
+            height: 600px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+            text-align: center;
+           
+        }
+        #bigactualimage{
+            width: 90%;
+            height: 90%;
+            
+        }
+        #content{
+            /* border: 1px solid red; */
+            width: 500px;
+            /* height: 600px; */
+            padding-left: 10px;
+            font-family: sans-serif;
+            text-align: center;
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        }
+        #bigcart{
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: black;
+            color: white;
+            border-radius: 6px;
+
+        }
+        #static{
+            width: 100%;
+        }
+
+
+    </style>
+  </head>
+  <body>
+    <div id="maincontainer">
+      <div id="select"></div>
+      <div id="infocontainer">
+          
+      </div>
+      <img src="./images/Screenshot (60).png" alt=""  id="static">
+    </div>
+  </body>
+</html>
+<script type="module">
+  import select from "./components/select.js";
+  let select_div = document.getElementById("select");
+  select_div.innerHTML = select();
+  let data = JSON.parse(localStorage.getItem("info"));
+
+  data.map(function (e) {
+    let div1 = document.createElement("div");
+    div1.setAttribute("id","bigimage")
+    let image = document.createElement("img");
+    image.src = e.api_featured_image;
+    
+    div1.append(image);
+    image.setAttribute("id","bigactualimage")
+
+    let div2 = document.createElement("div");
+    div2.setAttribute("id","content")
+
+    let brandname = document.createElement("h1");
+    brandname.textContent = e.brand;
+
+    let dis = document.createElement("p");
+    dis.textContent = e.description;
+
+    let name = document.createElement("h4");
+    name.textContent = e.name;
+
+    let price = document.createElement("h2");
+    price.textContent = `$ ${e.price}`;
+
+    let star1 = document.createElement("span");
+    star1.setAttribute("class", "fa fa-star checked");
+
+    let star2 = document.createElement("span");
+    star2.setAttribute("class", "fa fa-star checked");
+
+    let star3 = document.createElement("span");
+    star3.setAttribute("class", "fa fa-star checked");
+
+    let star4 = document.createElement("span");
+    star4.setAttribute("class", "fa fa-star checked");
+
+    let star5 = document.createElement("span");
+    star5.setAttribute("class", "fa fa-star not_checked");
+
+    let cart = document.createElement("button");
+    cart.textContent = `Quick Buy`;
+    cart.setAttribute("id","bigcart")
+    cart.addEventListener("click",function()
+    {
+        alert(`Add To Cart Successfull`)
+    })
+
+    
+    let heart = document.createElement("i")
+        heart.setAttribute("class","fa fa-heart hearting")
+        heart.addEventListener("click",function()
+        {
+            alert("Added To Wishlist")
+        })
+
+        heart.style.fontSize="80px"
+        heart.style.color="red"
+
+
+    div2.append(brandname,dis,name,price,star1,star2,star3,star4,star5,cart,heart)
+    document.getElementById("infocontainer").append(div1,div2)
+  });
+</script>
+
+<!-- api_featured_image: "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/495/original/open-uri20171223-4-9hrto4?1514063330"
+brand: "maybelline"
+category: null
+created_at: "2016-10-01T18:36:15.012Z"
+currency: null
+description: "Maybelline Face Studio Master Hi-Light Light Boosting bronzer formula has an expert \nbalance of shade + shimmer illuminator for natural glow. Skin goes \nsoft-lit with zero glitz.\n\n\t\tFor Best Results: Brush over all shades in palette and gently sweep over \ncheekbones, brow bones, and temples, or anywhere light naturally touches\n the face.\n\n\t\t\n\t\n\n                    "
+id: 495
+image_link: "https://d3t32hsnjxo7q6.cloudfront.net/i/991799d3e70b8856686979f8ff6dcfe0_ra,w158,h184_pa,w158,h184.png"
+name: "Maybelline Face Studio Master Hi-Light Light Booster Bronzer"
+price: "14.99"
+price_sign: null
+product_api_url: "https://makeup-api.herokuapp.com/api/v1/products/495.json"
+product_colors: []
+product_link: "https://well.ca/products/maybelline-face-studio-master_88837.html"
+product_type: "bronzer"
+rating: 5
+tag_list: []
+updated_at: "2017-12-23T21:08:50.624Z"
+website_link: "https://well.ca" -->
