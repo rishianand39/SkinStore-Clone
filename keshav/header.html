@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #top{
+            display: flex;
+            background-color: rgb(242,242,242);
+            height: 50px;
+            justify-content: flex-end;
+        }
+        #top>div{
+            margin-left: 50px;
+        }
+        #top>div>img{
+            border-radius:50% ;
+            margin-right: 0px;
+            margin-top: 15px;
+        }
+        #container{
+           width: 85%;
+           height: 100px;
+           margin: auto;
+           display: flex;
+           justify-content: space-between;
+        }
+        #container>div{
+            width: 33%;
+            height: 100%;
+            align-items: center;
+            text-align: left;
+            display: flex;
+        }
+        img{
+            width: 25px;
+            height: 25px;
+            margin-top: 18px;
+            margin-right: 5px;
+        }
+        #acc{
+            display: flex;
+            margin-left: 150px;   
+        }
+        #first>img{
+            width: 220px;
+            height: 70px;
+            margin-top: 10px;
+        }
+        .aCart{
+            display: flex;
+            margin-left: 100px;
+            font-size: 20px;
+            color: rgb(119,119,119);
+        }
+        #search>img{
+            width: 50px;
+            height: 40px;
+            margin-left: 0px;
+        }
+        #search>input{
+            width: 600px;
+            height: 30px;
+            margin-top: 15px;
+            margin-left: 30px;
+        }
+        hr{
+            background-color: black;
+            border: 0.5px solid black;
+            margin-bottom: 0px;
+        }
+        #type{
+            width: 1000px;
+            height: 40px;
+            margin-top: 0px;
+            display: flex;
+            margin-left: 100px;
+        }
+        #type>button{
+            padding: 12px;
+            background-color: white;
+            border: white;
+            color: gray;
+        }
+        #mainship{
+            background-color: rgb(242,242,242);
+        }
+        #ship{
+            display: flex;
+            background-color: rgb(242,242,242);
+            justify-content: space-around;
+            width: 1200px;
+            margin-left: 200px;
+        }
+        .shipbar{
+            display: flex;
+            margin: 20px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        #liner{
+            background-color: black;
+            color: white;
+            width: 90%;
+            height: 40px;
+            text-align: center;
+            margin-left: 80px;
+            margin-top: 15px;
+            border: 1px solid black;
+        }
+        #liner>h2{
+           margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div id="top">
+        <div><img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png" alt=""></div>
+        <div><p>us - USD </p></div>
+        <div><p>Help</p></div>
+    </div>
+    <div id="container">
+        <div id="first">
+            <img src="https://brandlogovector.com/wp-content/uploads/2021/12/SkinStore-Logo.png" alt="Logo">
+        </div>
+        <div id="search">
+            <input type="text" placeholder="Search for a product or brand...">
+            <img src="https://endlessicons.com/wp-content/uploads/2015/08/search-icon-2-614x460.png" alt="">
+        </div>
+        <div id="acc">
+            <div class="aCart">
+                <img src="https://i.pinimg.com/564x/57/e4/7f/57e47fa25cab8a9b49aca903bfa049a8.jpg" alt="">
+                <p>Account</p>
+            </div>
+            <div class="aCart">
+                <img src="https://png.pngtree.com/png-vector/20190927/ourlarge/pngtree-shopping-cart-icon-png-image_1736148.jpg" alt="">
+                <p>Cart</p>
+            </div>
+        </div>
+        
+    </div>
+    <hr>
+    <div id="type">
+        <button>Brands</button>
+        <button>Sale</button>
+        <button>Build a Routine</button>
+        <button>Skin Care</button>
+        <button>Hair</button>
+        <button>Makeup</button>
+        <button>Tools</button>
+        <button>Bath & Body</button>
+        <button>Self-Care</button>
+        <button>Fragrance</button>
+        <button>New</button>
+        <button>Advice</button>   
+    </div>
+    <div id="mainship">
+        <div id="ship">
+            <div class="shipbar">
+                <img src="https://cdns.iconmonstr.com/wp-content/assets/preview/2017/240/iconmonstr-delivery-1.png" alt="">
+                <h4>FREE US Shipping Over $49</h4>
+            </div>
+            <div class="shipbar">
+                <img src="https://icon-library.com/images/refer-icon/refer-icon-18.jpg" alt="">
+                <h4>Refer a Friend, Get $15</h4>
+            </div>
+            <div class="shipbar">
+                <img src="https://images.all-free-download.com/images/graphiclarge/clipboard_check_sign_icon_flat_black_white_contrast_outline_6921913.jpg" alt="">
+                <h4>New Customers Save 20% - Use Code NEWBIE</h4>
+            </div>
+            <div class="shipbar">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQotK8yG9Ju7v6NDZ2BZpek3GDQRaKE8tEOMA&usqp=CAU" alt="">
+                <h4>Free Beauty Consultations</h4>
+            </div>
+        </div>
+    </div>
+    <div id="liner">
+        <h2>25% off with code PRESIDENT + Alpha-H 5 Piece Set (Wort $114) @ $150 | Shop now</h2>
+    </div>
+</body>
+</html>
