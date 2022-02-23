@@ -79,6 +79,17 @@ a:hover {
     border: 1px solid rgb(26, 24, 24);
 }
 
+span {
+    margin: 5px 0 25px;
+}
+
+.message {
+    color: red;
+}
+
+
+/*----------------- Responsive part------------- */
+
 @media only screen and (min-width: 850px) and (max-width: 1280px) {
     #login {
         width: 40%;
@@ -105,12 +116,4 @@ a:hover {
     .log-face-google a {
         margin: 10px;
     }
-}
-
-span {
-    margin: 5px 0 25px;
-}
-
-.message {
-    color: red;
 }
