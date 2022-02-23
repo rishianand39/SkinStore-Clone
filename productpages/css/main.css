@@ -76,4 +76,40 @@
   font-family: sans-serif;
 }
 
+@media only screen and (min-width: 500px) and (max-width: 850px) {
+  #container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    width: 100%;
+   
+}
+#priceSort {
+  width: 15%;
+  margin-left: 1%;
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+  #container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+    width: 100%;
+   
+}
+#priceSort {
+ display: none;
+}
+#priceSort1 {
+  width: 100%;
+  margin-left: 1%;
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+}
 
