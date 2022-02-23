@@ -9,14 +9,25 @@
     #product{
         display: grid;
         grid-template-columns:repeat(4,22%);
-        grid-gap: 3%;
+        /* grid-gap:3%; */
+        grid-row-gap: 30px;
+        grid-column-gap: 3%;
+        /* overflow: hidden; */
+      
     }
     #product>div{
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+        /* margin-bottom: 3px;
+        margin-top: 3px; */
+        
     }
-    /* #product>div>img{
-        height: 50%;
-    } */
+    img{
+       /* padding: 0 50px; */
+       text-align: center;
+       width: 70%;
+       height: 170px;
+       border-radius: 10%;
+    }
 </style>
 </head>
 <body>
