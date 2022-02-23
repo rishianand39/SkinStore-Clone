@@ -40,6 +40,8 @@ async function MakeApiCall(url)
     let reating=document.createElement("p");
     let str=document.createElement("span");
     str.textContent="*****  ";
+    str.style.color="yellow";
+    str.style.fontSize="30px";
     let ret=document.createElement("span");
     ret.innerHTML=`(${element.rating} )`;
     // reating.innerHTML=`*****( ${} )`;

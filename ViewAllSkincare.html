@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View All Skin Care product</title>
 <style>
+    #sidebar{
+        display: flex;
+        gap: 30px;
+    }
     #product{
         display: grid;
         grid-template-columns:repeat(4,22%);
@@ -28,12 +32,62 @@
        height: 170px;
        border-radius: 10%;
     }
+    #sidebar>div>select,input{
+        padding:10px 30px;
+    }
+   #sidebar>div>select>option{
+       color: blueviolet;
+       font-size: large;
+       border: 1px solid red;
+    }
 </style>
 </head>
 <body>
     <div id="productcontainer">
         
-        <div id="sidebar"></div>
+        <div id="sidebar">
+            <div>
+                <select>
+                    <option>Sort by</option>
+                    <option>Default</option>
+                    <option>Price:Low to high</option>
+                    <option>Price: High to Low</option>
+                    <option>Newest Arrivals</option>
+                    <option>Percentage Discount</option>
+                </select>
+            </div>
+            <div>
+               <input type="text" placeholder="Brand" id="searchbybrand">
+            </div>
+            <div>
+                <select>
+                    <option><div>Skincare Product Type</div></option>
+                    <option>Moisturizer</option>
+                    <option>Serums</option>
+                    <option>Clensers</option>
+                    <option>Masks</option>
+                </select>
+            </div>
+            <div>
+                <select>
+                    <option>jdskjs</option>
+                    <option>jdskjs</option>
+                    <option>jdskjs</option>
+                    <option>jdskjs</option>
+                    <option>jdskjs</option>
+                </select>
+            </div>
+            <div>
+                <select>
+                    <option>jdskjs</option>
+                    <option>jdskjs</option>
+                    <option>jdskjs</option>
+                    <option>jdskjs</option>
+                    <option>jdskjs</option>
+                </select>
+            </div>
+              
+        </div>
         <div id="product">
             
         </div>
