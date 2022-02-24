@@ -503,6 +503,7 @@ appenddata(product,parent);
       {   
     let div=document.createElement("div");
     div.style.padding="6px";
+    div.style.cursor="pointer";
     div.onclick=()=>{
         localStorage.setItem("clicked_details",JSON.stringify(element));
         window.location.href="ProductDetails.html";
@@ -549,6 +550,7 @@ appenddata(product,parent);
     let buttonb=document.createElement("button");
     buttonb.innerHTML="QUICK BUY";
     buttonb.style.background="black";
+    buttonb.style.cursor="pointer";
     buttonb.style.color="white";
     buttonb.style.width="100%";
     buttonb.style.padding="10px 10px";
@@ -572,6 +574,7 @@ appenddata(product,parent);
     let cart=JSON.parse(localStorage.getItem("cart"))||[];
     cart.push(elem);
     localStorage.setItem("cart",JSON.stringify(cart));
+    alert("Item is add to cart");
     // console.log(cart);
    window.location.href="manojcart.html";
 }
