@@ -1,21 +1,4 @@
 product=[
-
-   
-   
-   
-   
-    
-    
-  
-    
-  
-   
-    
-    
-   
-    
-   
- 
 {
         
     image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289601-1554892770269975.jpg",
