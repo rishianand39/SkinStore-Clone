@@ -63,7 +63,12 @@ async function MakeApiCall(url)
     price.innerHTML=`$ ${element.price}`;
     price.style.fontWeight="bold";
     price.style.fontSize="25px";
+    let box=document.createElement("div");
+    // Addtocart
     let buttondiv=document.createElement("div");
+    buttondiv.onclick=function(event){
+        Addtocart(element);
+    }
     let buttonb=document.createElement("button");
     buttonb.innerHTML="QUICK BUY";
     buttonb.style.background="black";
@@ -76,8 +81,21 @@ async function MakeApiCall(url)
 
 
    
-    div.append(div1,name,t,reating,price,buttonb);
-    parent.append(div);
+    div.append(div1,name,t,reating,price);
+    box.append(div,buttondiv);
+    parent.append(box);
       }
   });
+ }
+
+
+ function Addtocart(element)
+ {
+     
+    let cart=JSON.parse(localStorage.getItem(cart))||[];
+    cart.push(element);
+    console.log(cart);
+    localStorage.setItem("cart",JSON.stringify(cart));
+    // window.location.href="ProductDetails.html";
+    // window.location.href="manojcar.html";
  }
