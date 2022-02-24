@@ -18,7 +18,11 @@ function append(data,parent)
 
         let div = document.createElement("div")
         div.setAttribute("id","singleproduct")
-        div.addEventListener("click",function()
+    
+        let image = document.createElement("img")
+        image.src = e.api_featured_image
+        image.setAttribute("id","image")
+        image.addEventListener("click",function()
         {
          
 
@@ -28,9 +32,6 @@ function append(data,parent)
             window.location.href="info.html"
 
         })
-        let image = document.createElement("img")
-        image.src = e.api_featured_image
-        image.setAttribute("id","image")
 
         let name = document.createElement("h4")
         name.textContent = e.name
