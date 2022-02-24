@@ -35,6 +35,8 @@
     }
     #sidebar{
         height: 60px;
+        padding-top: 3%;
+        border-top: 1px solid green ;
         border-bottom: 1px solid green;
         margin-left: 3%;
     }
@@ -60,10 +62,68 @@
         width: 50px;
         height: 50px;
     }
+    #titlebar{
+        margin-bottom: 1%;
+    }
+    .heddis{
+        display: flex;
+    }
+    .hed1{
+        flex: 7;
+    }
+    .head2{
+        flex: 3;
+        margin-top: 30%;
+    }
+    /* style butoon */
+    a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+    .previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* .round {
+  border-radius: 50%;
+} */
 </style>
 </head>
 <body>
     <div id="productcontainer">
+        <div id="titlebar">
+            <div><h1>View All Skincare</h1></div>
+            <p>Result</p>
+           <div class="heddis">
+               <div class="hed1">Radiant skin starts with effective skincare, and here at SkinStore we’ve curated the very best skincare brands. Shop with the peace of mind of our 20 years experience as an authorized retailer for brands such as Arcona, Caudalie, Dermalogica, Elizabeth Arden, First Aid Beauty, Murad, Obagi, SkinCeuticals, SkinMedica, StriVectin & many more! Take your pick from cleansers, moisturizers, masks, serums and more to teat all your skincare concerns from anti-aging to acne. 
+
+            </div>
+            <div class="hed2">
+                <h2></h2>
+
+                <a href="#" class="previous">&laquo;</a>
+                <a href="#" class="next round">1</a>
+                <a href="#" class="previous round">2</a>
+                <a href="#" class="previous round">3</a>
+               
+                <a href="#" class="next"> &raquo;</a>
+                
+                
+            </div>
+           </div> 
+        </div>
         
         <div id="sidebar">
             <div>
@@ -130,7 +190,26 @@
         <div id="product">
             
         </div>
+        <br>
+
+        <div class="heddis">
+            <div class="hed1">
+         </div>
+         <div class="hed2">
+
+             <a href="#" class="previous">&laquo;</a>
+             <a href="#" class="next round">1</a>
+             <a href="#" class="previous round">2</a>
+             <a href="#" class="previous round">3</a>
+            
+             <a href="#" class="next"> &raquo;</a>
+             
+             
+         </div>
+        </div>
+
     </div>
 </body>
 </html>
-<script src="./ViewAllSkincare.js"></script>
+<!-- <script src="./ViewAllSkincare.js"></script> -->
+<script src="./viewallskincarelocastorage.js"></script>

@@ -66,9 +66,7 @@ async function MakeApiCall(url)
     let box=document.createElement("div");
     // Addtocart
     let buttondiv=document.createElement("div");
-    buttondiv.onclick=function(event){
-        Addtocart(element);
-    }
+    
     let buttonb=document.createElement("button");
     buttonb.innerHTML="QUICK BUY";
     buttonb.style.background="black";
@@ -79,7 +77,9 @@ async function MakeApiCall(url)
     // let id=document.createElement("p");
     // id.innerHTML=element.id;
 
-
+    buttondiv.onclick=function(event){
+        addtocartt(element);
+    }
    
     div.append(div1,name,t,reating,price);
     box.append(div,buttondiv);
@@ -89,13 +89,10 @@ async function MakeApiCall(url)
  }
 
 
- function Addtocart(element)
- {
-     
-    let cart=JSON.parse(localStorage.getItem(cart))||[];
-    cart.push(element);
-    console.log(cart);
+ function  addtocartt(elem){
+    let cart=JSON.parse(localStorage.getItem("cart"))||[];
+    cart.push(elem);
     localStorage.setItem("cart",JSON.stringify(cart));
-    // window.location.href="ProductDetails.html";
-    // window.location.href="manojcar.html";
- }
+    // console.log(cart);
+   window.location.href="manojcart.html";
+}
