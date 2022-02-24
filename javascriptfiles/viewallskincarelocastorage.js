@@ -34,7 +34,7 @@ product=[
         
         image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/13305187-1604931097281379.jpg",
         name:"Sulwhasoo Concentrated Ginseng Renewing Water 125ml",
-        price:"",
+        price:"5",
         product_type:"82.00",
         Description:"Every morning and evening, dispense an appropriate amount on your palm and use all your fingers to gently spread on your face from the center outward.",
         Ingredients:"Water / Aqua / Eau, Glycerin, Butylene Glycol, Glycereth-26, Alcohol, Betaine, Panax Ginseng Root Water, Glycerylpolymethacrylate,Bis-Peg-18 Methyl Ether Dimethyl Silane, Propanediol, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Tauratecopolymer, Peg-60 Hydrogenated Castor Oil, Caprylic/Capric Triglyceride, Behenyl Alcohol, Polyglyceryl-10Pentastearate, Glyceryl Caprylate, Fragrance / Parfum, Cetearyl Alcohol, Acrylates/C10-30 Alkyl Acrylatecrosspolymer, Tromethamine, Methoxy Peg-114/Polyepsilon Caprolactone, Disodium Edta, Xanthan Gum,Ethylhexylglycerin, 1,2-Hexanediol, Adenosine, Sodium Stearoyl Lactylate, Honey / Mel / Miel, Cetearyl Glucoside,Beta-Glucan, Lilium Candidum Bulb Extract, Rehmannia Glutinosa Root Extract, Paeonia Albiflora Root Extract,Nelumbo Nucifera Flower Extract, Polygonatum Officinale Rhizome/Root Extract, Sorbitan Isostearate,Polysorbate 60, Hydrolyzed Ginseng Saponins, Linalool, Hydrogenated Lecithin, Phenoxyethanol, Caprylyl Glycol,Dextrin, Theobroma Cacao (Cocoa) Extract, Benzyl Benzoate, Potassium Hydroxide, Acetic Acid, Bht, Tocopherol",
@@ -495,12 +495,37 @@ let parent=document.getElementById("product");
 // }
 
 //  MakeApiCall("product");
-appenddata(product,parent);
+
+function sortbyprice()
+{
+    var selected = document.querySelector("#sortby").value;
+    if(selected=="low")
+    {
+        product.sort(function(a,b)
+        {
+            return a.price - b.price
+        })
+    }
+    else if(selected=="high")
+    {
+        product.sort(function(a,b)
+        {
+            return b.price - a.price
+        })
+    }
+    appenddata(product,parent);
+ 
+}
+
+
+
+
  function appenddata(data,parent){
+     parent.innerHTML="";
      console.log("data",data);
   data.forEach((element)=> {
-      if(element.category!=="")
-      {   
+    //   if(element.category!=="")
+    //   {   
     let div=document.createElement("div");
     div.style.padding="6px";
     div.style.cursor="pointer";
@@ -565,7 +590,7 @@ appenddata(product,parent);
     div.append(div1,name,t,reating,price);
     box.append(div,buttondiv);
     parent.append(box);
-      }
+    //   }
   });
  }
 
@@ -578,3 +603,5 @@ appenddata(product,parent);
     // console.log(cart);
    window.location.href="manojcart.html";
 }
+
+appenddata(product,parent);

@@ -128,11 +128,11 @@ a:hover {
         
         <div id="sidebar">
             <div>
-                <select>
+                <select id="sortby" onchange="sortbyprice()">
                     <option>Sort by</option>
                     <option>Default</option>
-                    <option>Price:Low to high</option>
-                    <option>Price: High to Low</option>
+                    <option value="low">Price:Low to high</option>
+                    <option value="high">Price: High to Low</option>
                     <option>Newest Arrivals</option>
                     <option>Percentage Discount</option>
                     <option></option>

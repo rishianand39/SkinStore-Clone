@@ -113,6 +113,9 @@ dis.innerHTML="Complimentary gift will be awarded at the cart. Offer valid for a
 
 let shopbutton=document.createElement("button");
 shopbutton.textContent="SHOP NOW";
+shopbutton.onclick=(event)=>{
+    buynow();
+}
 shopbutton.style.padding="20px";
     rightcont.append(pricenamediv,button,wishbutton,hi,selet,hr,dis,shopbutton);
 
@@ -134,4 +137,8 @@ function  addtocartt(elem){
 
 function wishbuttonfun(){
     alert("item add to wish list");
+}
+
+function buynow(){
+    alert("This function not availabe");
 }
