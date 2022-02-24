@@ -24,8 +24,19 @@ async function MakeApiCall(url)
       {   
     let div=document.createElement("div");
     div.style.padding="6px";
+    div.onclick=()=>{
+        localStorage.setItem("clicked_details",JSON.stringify(element));
+        window.location.href="ProductDetails.html";
+    };
+    let div1=document.createElement("div");
+    div1.style.display="flex";
+    div1.style.justifyContent="space-around";
     let image=document.createElement("img");
     image.src=element.image_link;
+    let wish=document.createElement("img");
+    wish.setAttribute("id","wish")
+    wish.src="wish.jpg";
+    div1.append(image,wish);
     // image.style.hover=element.product_link;
     let name=document.createElement("p");
     name.innerHTML=element.name;
@@ -60,12 +71,12 @@ async function MakeApiCall(url)
     buttonb.style.width="100%";
     buttonb.style.padding="10px 10px";
     buttondiv.append(buttonb);
-    let id=document.createElement("p");
-    id.innerHTML=element.id;
+    // let id=document.createElement("p");
+    // id.innerHTML=element.id;
 
 
    
-    div.append(image,name,t,reating,price,buttonb,id);
+    div.append(div1,name,t,reating,price,buttonb);
     parent.append(div);
       }
   });

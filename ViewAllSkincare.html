@@ -9,6 +9,7 @@
     #sidebar{
         display: flex;
         gap: 30px;
+        /* justify-content: space-around; */
     }
     #product{
         display: grid;
@@ -32,13 +33,32 @@
        height: 170px;
        border-radius: 10%;
     }
+    #sidebar{
+        height: 60px;
+        border-bottom: 1px solid green;
+        margin-left: 3%;
+    }
     #sidebar>div>select,input{
-        padding:10px 30px;
+        padding:10px 20px 10px 10px;
     }
    #sidebar>div>select>option{
        color: blueviolet;
        font-size: large;
        border: 1px solid red;
+    }
+    /* #test{
+        width: 100px;
+        height: 1000px;
+    } */
+    #wish{
+        width: 30px;
+        height: 30px;
+        margin:0%;
+        border-radius: 30%;
+    }
+    #wish:hover{
+        width: 50px;
+        height: 50px;
     }
 </style>
 </head>
@@ -54,6 +74,7 @@
                     <option>Price: High to Low</option>
                     <option>Newest Arrivals</option>
                     <option>Percentage Discount</option>
+                    <option></option>
                 </select>
             </div>
             <div>
@@ -61,29 +82,47 @@
             </div>
             <div>
                 <select>
-                    <option><div>Skincare Product Type</div></option>
+                    <option >Skincare Product Type</option>
                     <option>Moisturizer</option>
                     <option>Serums</option>
                     <option>Clensers</option>
                     <option>Masks</option>
+                    <option></option>
+                </select>
+            </div>
+            <div>
+                <select id="">
+                        <option>Skincare Format</option>
+                        <option>Cream</option>
+                        <option>Fluid</option>
+                        <option>Sheet</option>
+                        <option>Clay</option>
+                        <option>Get</option>
+                        <option>Setum</option>
+                        <option></option>
+
                 </select>
             </div>
             <div>
                 <select>
-                    <option>jdskjs</option>
-                    <option>jdskjs</option>
-                    <option>jdskjs</option>
-                    <option>jdskjs</option>
-                    <option>jdskjs</option>
+                    <option>Skincare Tools</option>
+                    <option>Face Cloths and Flannels</option>
+                    <option>Cotton Pads</option>
+                    <option>Face brushes</option>
+                    <option>Wipes</option>
+                    <option>Blemish Control Tools</option>
                 </select>
             </div>
+
             <div>
                 <select>
-                    <option>jdskjs</option>
-                    <option>jdskjs</option>
-                    <option>jdskjs</option>
-                    <option>jdskjs</option>
-                    <option>jdskjs</option>
+                    <option>Skin Type</option>
+                    <option>Combination</option>
+                    <option>Dehydrated</option>
+                    <option>Dry</option>
+                    <option>Mature</option>
+                    <option>Normal</option>
+                    <option>Oily</option>
                 </select>
             </div>
               
