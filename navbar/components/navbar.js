@@ -27,7 +27,7 @@ function navbar() {
                 </div>
             </div>
             <div class="nav-right flex-div">
-                <a href="/Account/register.html">
+                <a href="">
                     <div class="ac-cart-div flex-div">
                         <img src="/image/profile-icon.png" alt="" class="cart-icon" /> Account
                     </div>
@@ -44,163 +44,97 @@ function navbar() {
             <div class="dropdown">
                 <button class="dropbtn">Brand</button>
                 <div class="dropdown-content">
-                    <a href="#">A</a>
-                    <a href="#">B</a>
-                    <a href="#">C</a>
-                    <a href="#">D</a>
-                    <a href="#">E</a>
-                    <a href="#">F</a>
-                    <a href="#">G</a>
-                    <a href="#">H</a>
-                    <a href="#">I</a>
-                    <a href="#">J</a>
-                    <a href="#">K</a>
-                    <a href="#">L</a>
-                    <a href="#">M</a>
-                    <a href="#">N</a>
-                    <a href="#">O</a>
-                    <a href="#">P</a>
-                    <a href="#">Q</a>
-                    <a href="#">R</a>
-                    <a href="#">S</a>
-                    <a href="#">T</a>
-                    <a href="#">U</a>
-                    <a href="#">V</a>
-                    <a href="#">W</a>
-                    <a href="#">X</a>
-                    <a href="#">Y</a>
-                    <a href="#">Z</a>
-                    
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
                 </div>
             </div>
             <div class="dropdown">
                 <button class="dropbtn">Sale</button>
                 <div class="dropdown-content">
-                    <a href="#">Sale</a>
-                    <a href="#">Clearance</a>
-                    <a href="#">Gifts and Sets</a>
-                    <a href="#">All Coupons</a>
-                    <a href="#">Featured Offers</a>
-                    
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
                 </div>
             </div>
             <div class="dropdown">
                 <button class="dropbtn">Build a Routine</button>
                 <div class="dropdown-content">
-                    <a href="#">Dry Skin Routine</a>
-                    <a href="#">Normal Skin Rountine</a>
-                    <a href="#">Oil Skin Routine</a>
-                    <a href="#">Combination Skin Routine</a>
-                    <a href="#">Sensative Skin Routine</a>
-                   
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
                 </div>
             </div>
             <div class="dropdown">
                 <button class="dropbtn">Skin Care</button>
                 <div class="dropdown-content">
-                <a href="#">View All Skin Care</a>
-                <a href="#">New In</a>
-                <a href="#">Clear SkinCare</a>
-                <a href="#">5*Rated Products</a>
-                <a href="#">Gifts & Sets</a>
-                <a href="#">Supersizes & Duo</a>
-                <a href="#">Travel Sizes</a>
-                
-                    
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
                 </div>
             </div>
             <div class="dropdown">
                 <button class="dropbtn">Hair</button>
                 <div class="dropdown-content">
-                    <a href="#">Shampoo</a>
-                    <a href="#">Conditioners</a>
-                    <a href="#">Hair Treatments</a>
-                    <a href="#">Hair masks</a>
-                    <a href="#">Hair Oils</a>
-                    <a href="#">Hairs Sprays</a>
-                    <a href="#">Hairs Styling</a>
-                    <a href="#">Hair Styling</a>
-                    <a href="#">Hair Thinning & Loss</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
                 </div>
             </div>
             <div class="dropdown">
                 <button class="dropbtn">Makeup</button>
                 <div class="dropdown-content">
-                    <a href="#">View All Cousmetics</a>
-                    <a href="#">Eye Liners</a>
-                    <a href="#">Lash & Brow Enhancers</a>
-                    <a href="#">Eye Shadows</a>
-                    <a href="#">Maskaras</a>
-                    <a href="#">Brow Pencils</a>
-                    
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
                 </div>
             </div>
             <div class="dropdown">
                 <button class="dropbtn">Tools</button>
                 <div class="dropdown-content">
-                <a href="#">View all Tools</a>
-                <a href="#">Hair Dryers</a>
-                <a href="#">Flat Irons</a>
-                <a href="#">Rollers & Curling</a>
-                <a href="#">Hair Brushes</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
                 </div>
             </div>
             <div class="dropdown">
                 <button class="dropbtn">Bath & Body</button>
                 <div class="dropdown-content">
-                <a href="#">View All Bath & Body</a>
-                <a href="#">New In</a>
-                <a href="#">Clean Bath & body</a>
-                <a href="#">Travel Sizes</a>
-                <a href="#">At Home Spa</a>
-                <a href="#">Deodorants</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
                 </div>
             </div>
             <div class="dropdown">
                 <button class="dropbtn">Self-Care</button>
                 <div class="dropdown-content">
-                <a href="#">Self Care</a>
-                <a href="#">New In</a>
-                <a href="#">5*Rated Products</a>
-                <a href="#">At-Home Spa</a>
-                <a href="#">View All Wellness Products</a>
-                
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
                 </div>
             </div>
             <div class="dropdown">
                 <button class="dropbtn">Fragrance</button>
                 <div class="dropdown-content">
-                <a href="#">Neom Organics</a>
-                <a href="#">Glass Houses Fragrances</a>
-                <a href="#">Korres</a>
-                <a href="#">Nest Fragrances</a>
-                <a href="#">Molton Brown</a>
-                
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
                 </div>
             </div>
             <div class="dropdown">
                 <button class="dropbtn">New</button>
                 <div class="dropdown-content">
-                    <a href="#">Alpha-H</a>
-                    <a href="#">Alo</a>
-                    <a href="#">Foria</a>
-                    <a href="#">Nion</a>
-                    <a href="#">Sulwhasoo</a>
-                    <a href="#">Cowshed</a>
-                    <a href="#">Patrikes</a>
-                    <a href="#">Marvis</a>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
                 </div>
             </div>
             <div class="dropdown">
                 <button class="dropbtn">Advice</button>
                 <div class="dropdown-content">
-                <a href="#">SkinCare</a>
-                <a href="#">MakeUp</a>
-                <a href="#">HairCare</a>
-                <a href="#">Body</a>
-                <a href="#">Tips & Advice</a>
-                <a href="#">Beauty Centers</a>
-                   
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
                 </div>
             </div>
 
