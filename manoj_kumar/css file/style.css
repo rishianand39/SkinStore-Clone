@@ -1,3 +1,4 @@
+
 #sidebar{
     display: flex;
     gap: 30px;
@@ -87,4 +88,14 @@ color: black;
 background-color: #04AA6D;
 /* background-color: rgba(211, 186, 186, 0.705); */
 color: white;
+}
+
+
+
+@media only screen and (min-width:100px) and (max-width:1000px){
+    #product{
+        grid-template-columns:repeat(2,22%);
+        #skinid,#skinid2,#skinid3{
+            display: none;
+        }
 }
