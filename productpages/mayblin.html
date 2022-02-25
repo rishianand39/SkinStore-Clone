@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mayblin</title>
     <link rel="stylesheet" href="./css/main.css" />
-    
+    <link rel="stylesheet" href="/navbar/scripts/main.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -14,6 +14,7 @@
   
   </head>
   <body>
+    <div id="navbar-outer-div"></div>
     <div id="discription">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvnOKNZVkY917xJEizcAyv1UArju41-kqykg&usqp=CAU" alt="">
       <h4>Maybelline or Maybelline New York is an American multinational cosmetics, skin care, fragrance, and personal care company, based in New York City. It was founded in Chicago in 1914, and has been a subsidiary of French cosmetics company L'Oréal since 1996.</h4>
@@ -25,6 +26,8 @@
   </body>
 </html>
 <script type="module">
+  import navbar from "/navbar/components/navbar.js"; 
+  document.querySelector("#navbar-outer-div").innerHTML = navbar();
   import select from "./components/select.js";
   import { APIcall, append } from "./scripts/main.js";
   let select_div = document.getElementById("select");

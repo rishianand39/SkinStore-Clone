@@ -9,6 +9,7 @@
   margin-left: 1%;
   padding: 10px;
   font-family: sans-serif;
+  margin-bottom: 10px;
 }
 .checked {
   color: orange;
@@ -30,6 +31,7 @@
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 5px;
   padding-bottom: 20px;
+
 }
 #image {
   width: 60%;
@@ -43,7 +45,7 @@
 }
 #cart {
   width: 100%;
-  margin-top: -6px;
+  margin-top: 6px;
   padding: 6px;
   background-color: rgb(46, 42, 42);
   color: cornsilk;
@@ -72,6 +74,7 @@
   margin-left: 1%;
   padding: 10px;
   font-family: sans-serif;
+  margin-bottom: 10px;
 }
 #discription {
   width: 96%;
@@ -80,6 +83,8 @@
   justify-content: space-between;
   border: 1px solid black;
   padding-left: 10px;
+  margin-top: 10px;
+
 }
 #discription > img {
   width: 20%;
@@ -90,6 +95,9 @@
 #discription > h4 {
   font-family: sans-serif;
   width: 70%;
+}
+#select{
+  margin-bottom: 10px;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 850px) {
