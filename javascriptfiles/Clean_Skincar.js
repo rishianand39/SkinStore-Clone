@@ -493,7 +493,9 @@ const product=[
     
     
     
-    
+    var pro=product.length;
+    var count=document.getElementById("count");
+    count.innerHTML=`Result ${pro}`;
     
     let parent=document.getElementById("product");
     
