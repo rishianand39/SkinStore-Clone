@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="/navbar/scripts/main.css" />
     <style>
         #infocontainer{
             display:  flex;
@@ -58,6 +59,7 @@
     </style>
   </head>
   <body>
+    <div id="navbar-outer-div"></div>
     <div id="maincontainer">
       <div id="select"></div>
       <div id="infocontainer">
@@ -68,6 +70,8 @@
   </body>
 </html>
 <script type="module">
+    import navbar from "/navbar/components/navbar.js"; 
+  document.querySelector("#navbar-outer-div").innerHTML = navbar();
   import select from "./components/select.js";
   let select_div = document.getElementById("select");
   select_div.innerHTML = select();
