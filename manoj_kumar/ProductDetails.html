@@ -1,3 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProductDetails pages</title>
+    <style>
+        #productdetailscont{
+            display:flex;
+            gap: 2%;
+
+        }
+        #leftcont{
+            flex: 6;
+            /* border: 1px solid rebeccapurple; */
+        }
+       /* #proddetails{
+           width: 100%;
+       } */
+        #rightcont{
+            flex: 4;
+            /* border: 1px solid salmon; */
+        }
+        #image>img{
+            width: 100%;
+            height: 500px;
+        }
+       #logimage>img{
+            width: 100%;
+          
+        }
+        #wishlist>button:hover{
+            background-color: aquamarine;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="productdetailscont">
+        <div id="leftcont">
+         
+            
+        </div>
+        <div id="rightcont">
+
+        </div>
+    </div>
+    
+</body>
+</html>
+<!-- <script src="./javascriptfiles/productDetails.js"></script> -->
+
+<script>
 let product_dtails=JSON.parse(localStorage.getItem("clicked_details"));
 console.log(product_dtails);
 // console.log(product_dtails.price);
@@ -29,7 +83,7 @@ function product(product_dtails)
     direct.style.fontSize="20px";
     let direc=document.createElement("p");
     direc.style.flex="8";
-    direc.textContent=product_dtails.Description;
+    direc.textContent=product_dtails.description;
    
     dirctiondiv.append(direct,direc);
 
@@ -55,7 +109,7 @@ function product(product_dtails)
     brandt.style.fontSize="20px";
 
     let Brand=document.createElement("p");
-    Brand.textContent=product_dtails.Brand;
+    Brand.textContent=product_dtails.brand;
     Brand.style.flex="8";
     // Brand.style.background="rgba(211, 186, 186, 0.705)";
     Branddiv.append(brandt, Brand);
@@ -70,7 +124,7 @@ function product(product_dtails)
     let pricenamediv=document.createElement("div");
     pricenamediv.style.fontFamily="sans-serif";
     let brad=document.createElement("h4");
-    brad.textContent=product_dtails.Brand;
+    brad.textContent=product_dtails.brand;
     let name=document.createElement("h1");
     name.textContent=product_dtails.name;
     price=document.createElement("h1");
@@ -142,3 +196,7 @@ function wishbuttonfun(){
 function buynow(){
     alert("This function not availabe");
 }
+
+</script>
+
+

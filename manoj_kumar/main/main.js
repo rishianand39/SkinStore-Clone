@@ -1,7 +1,4 @@
 
-//
-
-// product.innerHTML="hello check check check";
 async function MakeApiCall(url)
 {
     try{
@@ -14,13 +11,6 @@ async function MakeApiCall(url)
        console.log("error",error);
     }
 }
-
-//  MakeApiCall("product");
-
-
-
-
-
 
  function appenddata(data,parent){
      parent.innerHTML="";
@@ -49,7 +39,7 @@ async function MakeApiCall(url)
     name.style.height="100px";
     let t=document.createElement("p");
     let type=document.createElement("span");
-    type.innerHTML=element.Brand;
+    type.innerHTML=element.brand;
     type.style.padding="0 10px";
     type.style.border="1px solid red";
     t.append(type);
