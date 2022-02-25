@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundations pages</title>
+    <link rel="stylesheet" href="./css file/style.css">
+
+</head>
+<body>
+    <div id="productcontainer">
+        <div id="titlebar">
+            <div><h1>Foundations</h1></div>
+            <p id="count">Result</p>
+           <div class="heddis">
+               <div class="hed1">Perfect your complexion with our extensive range of foundations, available in all textures from serum to powder. The foundation allows you to achieve an even complexion and hide skin imperfections if there are any. It facilitates easy application and blending of beauty products such as bronzer or blush. Moreover, the foundation, as the basis of all make-up, protects the skin from external factors and premature aging thanks to the vitamins and antioxidants it contains. Achieve the most natural-looking finish with the foundation from bareMinerals or camouflage skin with Dermablend. Discover a lit-from-within glow with our long-lasting, buildable coverage options.
+                
+                
+
+            </div>
+            <div class="hed2">
+                <h2></h2>
+
+                <a href="#" class="previous">&laquo;</a>
+                <a href="#" class="next round">1</a>
+                <a href="#" class="previous round">2</a>
+                <a href="#" class="previous round">3</a>
+               
+                <a href="#" class="next"> &raquo;</a>
+                
+                
+            </div>
+           </div> 
+        </div>
+        
+        <div id="sidebar">
+           
+
+
+
+        </div>
+        <div id="product">
+            
+        </div>
+        <br>
+
+        <div class="heddis">
+            <div class="hed1">
+         </div>
+         <div class="hed2">
+
+             <a href="#" class="previous">&laquo;</a>
+             <a href="#" class="next round">1</a>
+             <a href="#" class="previous round">2</a>
+             <a href="#" class="previous round">3</a>
+            
+             <a href="#" class="next"> &raquo;</a>
+             
+             
+         </div>
+        </div>
+
+    </div>
+</body>
+</html>
+<!-- <script src="./ViewAllSkincare.js"></script> -->
+<!-- <script src="./javascriptfiles/viewallskincarelocastorage.js"></script> -->
+
+
+
+
+
+<script type="module">
+
+import selectoption from "./javascriptfiles/select.js";
+// console.log(selectoption);
+let selectt=document.getElementById("sidebar");
+selectt.innerHTML=selectoption();
+    import {MakeApiCall,appenddata} from "./main/main.js";
+
+
+  var product=await MakeApiCall("https://makeup-api.herokuapp.com/api/v1/products.json?product_type=foundation");
+
+  var pro=product.length;
+  var count=document.getElementById("count");
+  count.innerHTML=`Result ${pro}`;
+  
+let parent=document.getElementById("product");
+ appenddata(product,parent);
+
+
+
+
+
+
+
+ let ele = document.getElementById("sortby")
+  ele.addEventListener("change",function(){
+     let v = document.getElementById("sortby").value
+     if(v=="low")
+     {
+        product.sort(function(a,b)
+       {
+         return a.price - b.price
+       })
+     }
+     if(v=="high")
+     {
+        product.sort(function(a,b)
+       {
+         return b.price - a.price
+       })
+     }
+
+    //  console.log(res)
+    appenddata(product,parent);
+  })
+
+
+
+
+
+
+
+</script>

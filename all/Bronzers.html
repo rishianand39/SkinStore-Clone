@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bronzers product</title>
+    <link rel="stylesheet" href="./css file/style.css">
+
+</head>
+<body>
+    <div id="productcontainer">
+        <div id="titlebar">
+            <div><h1>Bronzers</h1></div>
+            <p id="count">Result</p>
+           <div class="heddis">
+               <div class="hed1">Get that summer glow with our range of bronzers available at SkinStore. Featuring ultra-pigmented formulas, you can choose from a selection of flattering shades and finishes to suit your skin tone whilst preventing irritation. Our rich palette of shades from soft golden to dark chocolate will allow you to choose the bronzer that is right for you. Bronzers are perfect for helping to contour and highlight whilst adding a warm tone to your complexion.
+                
+                
+
+            </div>
+            <div class="hed2">
+                <h2></h2>
+
+                <a href="#" class="previous">&laquo;</a>
+                <a href="#" class="next round">1</a>
+                <a href="#" class="previous round">2</a>
+                <a href="#" class="previous round">3</a>
+               
+                <a href="#" class="next"> &raquo;</a>
+                
+                
+            </div>
+           </div> 
+        </div>
+        
+        <div id="sidebar">
+           
+
+
+
+        </div>
+        <div id="product">
+            
+        </div>
+        <br>
+
+        <div class="heddis">
+            <div class="hed1">
+         </div>
+         <div class="hed2">
+
+             <a href="#" class="previous">&laquo;</a>
+             <a href="#" class="next round">1</a>
+             <a href="#" class="previous round">2</a>
+             <a href="#" class="previous round">3</a>
+            
+             <a href="#" class="next"> &raquo;</a>
+             
+             
+         </div>
+        </div>
+
+    </div>
+</body>
+</html>
+<!-- <script src="./ViewAllSkincare.js"></script> -->
+<!-- <script src="./javascriptfiles/viewallskincarelocastorage.js"></script> -->
+
+
+
+
+
+<script type="module">
+
+import selectoption from "./javascriptfiles/select.js";
+// console.log(selectoption);
+let selectt=document.getElementById("sidebar");
+selectt.innerHTML=selectoption();
+    import {MakeApiCall,appenddata} from "./main/main.js";
+
+
+  var product=await MakeApiCall("https://makeup-api.herokuapp.com/api/v1/products.json?product_type=bronzer");
+  var pro=product.length;
+  var count=document.getElementById("count");
+  count.innerHTML=`Result ${pro}`;
+// console.log(product.length);
+let parent=document.getElementById("product");
+ appenddata(product,parent);
+
+
+// 
+
+
+ let ele = document.getElementById("sortby")
+  ele.addEventListener("change",function(){
+     let v = document.getElementById("sortby").value
+     if(v=="low")
+     {
+        product.sort(function(a,b)
+       {
+         return a.price - b.price
+       })
+     }
+     if(v=="high")
+     {
+        product.sort(function(a,b)
+       {
+         return b.price - a.price
+       })
+     }
+
+    //  console.log(res)
+    appenddata(product,parent);
+  })
+
+
+
+
+
+
+
+</script>
