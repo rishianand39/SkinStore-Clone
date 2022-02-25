@@ -7,7 +7,7 @@ function product(product_dtails)
     let image_div=document.createElement("div");
     image_div.setAttribute("id","image");
     let image=document.createElement("img");
-    image.src=product_dtails.image_link;
+    image.src=product_dtails.api_featured_image;
     image_div.append(image);
    
     let logimage=document.createElement("div");
@@ -130,7 +130,7 @@ function  addtocartt(elem){
     let cart=JSON.parse(localStorage.getItem("cart"))||[];
     cart.push(elem);
     localStorage.setItem("cart",JSON.stringify(cart));
-    alert("Item is add to cart");
+    alert("Successfully item added to cart");
     // console.log(cart);
    window.location.href="manojcart.html";
 }

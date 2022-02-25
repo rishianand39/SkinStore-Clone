@@ -1,42 +1,23 @@
 
-let parent=document.getElementById("product");
+//
 
 // product.innerHTML="hello check check check";
-// async function MakeApiCall(url)
-// {
-//     try{
-//         let res=await fetch(url);
-//         let data=await res.json();
-//         // console.log(data);
-//         appenddata(data,parent);
+async function MakeApiCall(url)
+{
+    try{
+        let res=await fetch(url);
+        let data=await res.json();
+        // console.log(data);
+       return data;
 
-//     }catch(error){
-//        console.log("error",error);
-//     }
-// }
+    }catch(error){
+       console.log("error",error);
+    }
+}
 
 //  MakeApiCall("product");
 
-function sortbyprice()
-{
-    var selected = document.querySelector("#sortby").value;
-    if(selected=="low")
-    {
-        product.sort(function(a,b)
-        {
-            return a.price - b.price
-        })
-    }
-    else if(selected=="high")
-    {
-        product.sort(function(a,b)
-        {
-            return b.price - a.price
-        })
-    }
-    appenddata(product,parent);
- 
-}
+
 
 
 
@@ -44,9 +25,7 @@ function sortbyprice()
  function appenddata(data,parent){
      parent.innerHTML="";
      console.log("data",data);
-  data.forEach((element)=> {
-    //   if(element.category!=="")
-    //   {   
+  data.forEach((element)=> {   
     let div=document.createElement("div");
     div.style.padding="6px";
     div.style.cursor="pointer";
@@ -58,7 +37,7 @@ function sortbyprice()
     div1.style.display="flex";
     div1.style.justifyContent="space-around";
     let image=document.createElement("img");
-    image.src=element.image_link;
+    image.src=element.api_featured_image;
     let wish=document.createElement("img");
     wish.setAttribute("id","wish")
     wish.src="wish.jpg";
@@ -120,12 +99,11 @@ function sortbyprice()
     let cart=JSON.parse(localStorage.getItem("cart"))||[];
     cart.push(elem);
     localStorage.setItem("cart",JSON.stringify(cart));
-    alert("Item is add to cart");
+    alert(" Successfully item added to cart");
     // console.log(cart);
    window.location.href="manojcart.html";
 }
 
-appenddata(product,parent);
 
 
-export {make}
+export {MakeApiCall,appenddata}
