@@ -622,9 +622,9 @@ const product=[
     
     
      function  addtocartt(elem){
-        let cart=JSON.parse(localStorage.getItem("cart"))||[];
+        let cart=JSON.parse(localStorage.getItem("cart_arr"))||[];
         cart.push(elem);
-        localStorage.setItem("cart",JSON.stringify(cart));
+        localStorage.setItem("cart_arr",JSON.stringify(cart));
         alert("Item is add to cart");
         // console.log(cart);
        window.location.href="manojcart.html";

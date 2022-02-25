@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bronzers product</title>
+    <title>Liquid Lipstick</title>
     <link rel="stylesheet" href="./css file/style.css">
 
 </head>
 <body>
     <div id="productcontainer">
         <div id="titlebar">
-            <div><h1>Bronzers</h1></div>
+            <div><h1>Liquid Lipstick</h1></div>
             <p id="count">Result</p>
            <div class="heddis">
-               <div class="hed1">Get that summer glow with our range of bronzers available at SkinStore. Featuring ultra-pigmented formulas, you can choose from a selection of flattering shades and finishes to suit your skin tone whilst preventing irritation. Our rich palette of shades from soft golden to dark chocolate will allow you to choose the bronzer that is right for you. Bronzers are perfect for helping to contour and highlight whilst adding a warm tone to your complexion.
-                
+               <div class="hed1"> Combining the sheen of a gloss with the intense pigment of a lipstick, liquid lipsticks have raised the bar in all-day wear lip colors. Choose between creamy and matte textures from make-up artist favorites and discover an irresistible, smudge-proof, long-lasting finish. Be sure to exfoliate the lips first with something like the NCLA Beauty Sugar Sugar Watermelon Lip Scrub and follow through with a lip balm such as Dr. Hauschka's. A smudge-proof lip color with serious staying power is at long last yours with our collection of liquid lipsticks.
+
+
                 
 
             </div>
@@ -45,6 +46,22 @@
         </div>
         <br>
 
+        <div class="heddis">
+            <div class="hed1">
+         </div>
+         <div class="hed2">
+
+             <a href="#" class="previous">&laquo;</a>
+             <a href="#" class="next round">1</a>
+             <a href="#" class="previous round">2</a>
+             <a href="#" class="previous round">3</a>
+            
+             <a href="#" class="next"> &raquo;</a>
+             
+             
+         </div>
+        </div>
+
     </div>
 </body>
 </html>
@@ -64,7 +81,7 @@ selectt.innerHTML=selectoption();
     import {MakeApiCall,appenddata} from "./main/main.js";
 
 
-  var product=await MakeApiCall("https://makeup-api.herokuapp.com/api/v1/products.json?product_type=bronzer");
+  var product=await MakeApiCall("http://makeup-api.herokuapp.com/api/v1/products.json?category=liquid&product_type=lipstick");
   var pro=product.length;
   var count=document.getElementById("count");
   count.innerHTML=`Result ${pro}`;

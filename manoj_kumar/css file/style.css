@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    /* padding: .5%; */
+}
 #sidebar{
     display: flex;
     gap: 30px;
@@ -14,8 +18,7 @@
 }
 #product>div{
     box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
-    /* margin-bottom: 3px;
-    margin-top: 3px; */
+   
     
 }
 img{
@@ -26,14 +29,15 @@ img{
    border-radius: 10%;
 }
 #sidebar{
-    height: 60px;
-    padding-top: 3%;
+    height: 40px;
+    padding-top: 2%;
+    padding-bottom: 2%;
     border-top: 1px solid green ;
     border-bottom: 1px solid green;
     margin-left: 3%;
 }
-#sidebar>div>select,input{
-    padding:10px 20px 10px 10px;
+#sidebar>select,input{
+    padding:10px 10px 10px 10px;
 }
 #sidebar>div>select>option{
    color: blueviolet;
@@ -87,4 +91,52 @@ color: black;
 background-color: #04AA6D;
 /* background-color: rgba(211, 186, 186, 0.705); */
 color: white;
+}
+
+
+
+@media only screen and (min-width:699px) and (max-width:1000px){
+    #product{
+        grid-template-columns:repeat(4,1fr);
+        /* display: none; */
+    }
+    #sidebar{
+        display: none;
+    }
+    
+
+}
+
+@media only screen and (min-width:550px) and (max-width:700px){
+    #product{
+        grid-template-columns:repeat(3,33%);
+        /* display: none; */
+    }
+    #sidebar{
+        display: none;
+    }
+}
+    
+    @media only screen and (min-width:344px) and (max-width:550px){
+        #product{
+            grid-template-columns:repeat(2,1fr);
+            /* display: none; */
+        }
+        #sidebar,.hed1{
+            display: none;
+        }
+
+
+}
+@media only screen and (min-width:0px) and (max-width:344px){
+    #product{
+        grid-template-columns:repeat(1,1fr);
+    }
+    #sidebar{
+        display: none;
+    }
+    #sidebar,.hed1{
+        display: none;
+    }
+
 }
