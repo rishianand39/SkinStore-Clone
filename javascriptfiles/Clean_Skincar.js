@@ -1,7 +1,7 @@
-product=[
+const product=[
     {
             
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289601-1554892770269975.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289601-1554892770269975.jpg",
         name:"SkinCeuticals Anti-aging Skin Care Routine (Worth $481.00)",
         price:"332.00",
         product_type:"",
@@ -13,7 +13,7 @@ product=[
     
       {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/12538011-5734765050447840.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/12538011-5734765050447840.jpg",
         name:"Elta MD Foaming Facial Cleanser Duo (Worth $55)",
         price:"52.00",
         product_type:"",
@@ -23,7 +23,7 @@ product=[
     },
       {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/12664555-1704871739992403.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/12664555-1704871739992403.jpg",
         name:"Neocutis Lumière Firm Riche Extra Moisturizing Illuminating and Tightening Eye Cream 15ml",
         price:"118.00",
         product_type:"",
@@ -33,7 +33,7 @@ product=[
     },
      {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11429304-6474901837373195.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11429304-6474901837373195.jpg",
         name:"The Ordinary AHA 30% + BHA 2% Peeling Solution 30ml",
         price:"8.00",
         product_type:"",
@@ -43,7 +43,7 @@ product=[
     },
      {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/12053028-5704882135372731.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/12053028-5704882135372731.jpg",
         name:"Sunday Riley C.E.O. Glow Vitamin C + Turmeric Face Oil 35ml (Worth $94)",
         price:"80.00",
         product_type:"",
@@ -54,7 +54,7 @@ product=[
     
      {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11653879-1004894571310312.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11653879-1004894571310312.jpg",
         name:"REN Clean Skincare Ready Steady Glow Daily AHA Tonic 250ml",
         price:"39.00",
         product_type:"Radiance",
@@ -64,7 +64,7 @@ product=[
     },
     {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289070-1834900296101010.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289070-1834900296101010.jpg",
         name:"PCA SKIN Clearskin",
         price:"53.00",
         product_type:"",
@@ -74,7 +74,7 @@ product=[
     },
      {
         
-        image_link:"https://static.thcdn.com/images/xsmall/webp//productimg/original/11289098-5294866331722597.jpg",
+        api_featured_image:"https://static.thcdn.com/images/xsmall/webp//productimg/original/11289098-5294866331722597.jpg",
         name:"PCA SKIN Rejuvenating Serum",
         price:"98.00",
         product_type:"",
@@ -84,7 +84,7 @@ product=[
     },
     {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11588282-1584882139120733.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11588282-1584882139120733.jpg",
         name:"Sunday Riley CEO 15% Vitamin C Brightening Serum 1oz",
         price:"85.00",
         product_type:"",
@@ -94,7 +94,7 @@ product=[
     },
     {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/12852429-5104876441475610.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/12852429-5104876441475610.jpg",
         name:"EltaMD UV Glow Broad-Spectrum SPF36+ Tinted Serum 1.7 oz",
         price:"38.50",
         product_type:"",
@@ -104,7 +104,7 @@ product=[
     },
      {
         
-        image_link:"https://static.thcdn.com/images/large/webp/productimg/1600/1600/11429066-1744528379596254.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp/productimg/1600/1600/11429066-1744528379596254.jpg",
         name:"La Roche-Posay Toleriane Hydrating Gentle Cleanser (Various Sizes)",
         price:"11.99",
         product_type:"Toleriane",
@@ -114,7 +114,7 @@ product=[
     },
       {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/13305191-3384931098347930.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/13305191-3384931098347930.jpg",
         name:"Sulwhasoo Essential Refining Eye Cream 25ml",
         price:"114.00",
         product_type:"",
@@ -124,7 +124,7 @@ product=[
     },
        {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11488280-1494876994090613.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11488280-1494876994090613.jpg",
         name:"Epionce Daily Shield Tinted SPF50 Lotion 1.7oz",
         price:"40.00",
         product_type:"",
@@ -134,7 +134,7 @@ product=[
     },
       {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11054488-6294867924186974.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11054488-6294867924186974.jpg",
         name:"First Aid Beauty Ultra Repair Cream (6 oz.)",
         price:"38.00",
         product_type:"Ultra Repair",
@@ -144,7 +144,7 @@ product=[
     },
     {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289609-1174892770940184.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289609-1174892770940184.jpg",
         name:"SkinCeuticals C E Ferulic with 15% L-Ascorbic Acid Vitamin C Serum 30ml",
         price:"166.00",
         product_type:"Prevent",
@@ -154,7 +154,7 @@ product=[
     },
      {
         
-        image_link:"https://static.thcdn.com/images/xsmall/webp//productimg/original/12810684-1104840720634844.jpg",
+        api_featured_image:"https://static.thcdn.com/images/xsmall/webp//productimg/original/12810684-1104840720634844.jpg",
         name:"Medik8 Advanced Night Ceramide Cream 48g",
         price:"69.00",
         product_type:"",
@@ -163,12 +163,12 @@ product=[
         Brand:"Medik8"
     },
      {
-        image_link:"https://static.thcdn.com/images/xsmall/webp//productimg/original/11289098-5294866331722597.jpg",
+        api_featured_image:"https://static.thcdn.com/images/xsmall/webp//productimg/original/11289098-5294866331722597.jpg",
         name:"EltaMD Foaming Facial Cleanser",price:"28",Description:"On damp skin, gently massage in circular motion. Allow 30 seconds for cleanser to foam. Rinse thoroughly.",Ingredients:"Bromelain: Enzymes found in pineapples that work as an anti-inflammatory and reduces inflammation. Adds the foaming feature, leaving skin silky smooth",Brand:"EltaMD"
     },
     {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11054487-7024901860582746.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11054487-7024901860582746.jpg",
         name:"First Aid Beauty Face Cleanser (5 oz.)",
         price:"24.00",
         product_type:"Skincare",
@@ -178,7 +178,7 @@ product=[
     },
      {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/13506154-1914930092074211.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/13506154-1914930092074211.jpg",
         name:"MZ Skin Hyaluronic Acid Hydrating Serum 30ml",
         price:"165.00",
         product_type:"",
@@ -188,7 +188,7 @@ product=[
     },
     {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11388132-1094867645304493.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11388132-1094867645304493.jpg",
         name:"Dermalogica Daily Superfoliant 2oz",
         price:"62.00",
         product_type:"AGE Smart",
@@ -198,7 +198,7 @@ product=[
     },
     {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/12053028-5704882135372731.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/12053028-5704882135372731.jpg",
         name:"Sunday Riley C.E.O. Glow Vitamin C + Turmeric Face Oil 35ml (Worth $94)",
         price:"80.00",
         product_type:"",
@@ -208,7 +208,7 @@ product=[
     },
      {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11370312-2034866342257028.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11370312-2034866342257028.jpg",
         name:"EltaMD UV Clear Tinted Broad-Spectrum SPF46",
         price:"39.00",
         product_type:"",
@@ -219,7 +219,7 @@ product=[
     
       {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11642883-1514898326450035.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11642883-1514898326450035.jpg",
         name:"Elemis Superfood Facial Wash",
         price:"25.00",
         product_type:"Superfood",
@@ -229,14 +229,14 @@ product=[
     },
      {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289657-9384876690289403.jpg", name:"SkinMedica AHA/BHA Exfoliating Cleanser (6oz)",price:"42.30",product_type:"Cleanse",Description:"Moisten skin with warm water. Apply a small amount to the fingertips, add a little water and gently exfoliate and cleanse the face using small circular motions. Rinse thoroughly with warm water. Use as often as needed. Avoid getting in eyes. If contact occurs, rinse eyes thoroughly with water",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289657-9384876690289403.jpg", name:"SkinMedica AHA/BHA Exfoliating Cleanser (6oz)",price:"42.30",product_type:"Cleanse",Description:"Moisten skin with warm water. Apply a small amount to the fingertips, add a little water and gently exfoliate and cleanse the face using small circular motions. Rinse thoroughly with warm water. Use as often as needed. Avoid getting in eyes. If contact occurs, rinse eyes thoroughly with water",
         Ingredients:"Water/Aqua/Eau, Sodium C14-16 Olefin Sulfonate, Cocamidopropyl Betaine, PEG/PPG-8/3 Diisostearate, Hydrogenated Jojoba Oil, Acrylates Copolymer, Vaccinium Myrtillus Fruit/Leaf Extract, Saccharum Officinarum Extract, Acer Saccharum Extract, Citrus Aurantium Dulcis Fruit Extract, Citrus Limon Fruit Extract, Salicylic Acid, Glycyrrhiza Glabra Root Extract, Panthenol, Bisabolol, Citric Acid, Glycerin, Ethylhexylglycerin, Sodium Hydroxide, Disodium EDTA, Potassium Sorbate, Phenoxyethanol, Lavandula Angustifolia Oil, Citrus Aurantium Dulcis Peel Oil, Mica, Tin Oxide, Titanium Dioxide (CI 77891).",
         Brand:"SkinMedica"
     },
     
     {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/13468234-5434916661811767.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/13468234-5434916661811767.jpg",
         name:"Decorté Liposome Advanced Repair Serum (Various Sizes)",
         price:"75.00",
         product_type:"Liposome",
@@ -246,7 +246,7 @@ product=[
     },
     {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/13414778-1464931103508845.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/13414778-1464931103508845.jpg",
         name:"Sulwhasoo Concentrated Ginseng Renewing Cream Mask 0.25 oz",
         price:"120.00",
         product_type:"",
@@ -256,7 +256,7 @@ product=[
     },
      {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/12771530-3164918929282606.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/12771530-3164918929282606.jpg",
         name:"SkinCeuticals Silymarin CF Serum 1 fl. oz",
         price:"166.00",
         product_type:"Prevent",
@@ -267,7 +267,7 @@ product=[
        
     {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/12538013-4764765050522444.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/12538013-4764765050522444.jpg",
         name:"EltaMD UV Clear SPF46 Broad-Spectrum Duo (Worth $72)",
         price:"70.00",
         product_type:"",
@@ -278,7 +278,7 @@ product=[
      
     {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11363395-1014901836846776.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11363395-1014901836846776.jpg",
         name:"The Ordinary Hyaluronic Acid 2% + B5 Hydration Support Formula 30ml",
         price:"7.50",
         product_type:"",
@@ -288,7 +288,7 @@ product=[
     },
     {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/12053028-5704882135372731.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/12053028-5704882135372731.jpg",
         name:"Sunday Riley C.E.O. Glow Vitamin C + Turmeric Face Oil 35ml (Worth $94)",
         price:"80.00",
         product_type:"",
@@ -299,7 +299,7 @@ product=[
     
      {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11986270-7564871574685569.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11986270-7564871574685569.jpg",
         name:"NuFACE FIX Line Smoothing Device and Serum",
         price:"149.00",
         product_type:"",
@@ -309,7 +309,7 @@ product=[
     },
        {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11872688-1784870986277584.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11872688-1784870986277584.jpg",
         name:"SkinCeuticals MicroExfoliating Cleanser 150ml",
         price:"31.00",
         product_type:"Cleanse",
@@ -319,7 +319,7 @@ product=[
     },
     {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11207443-2214866130380732.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11207443-2214866130380732.jpg",
         name:"DHC Deep Cleansing Oil",
         price:"15.00",
         product_type:"Olive Originals",
@@ -330,7 +330,7 @@ product=[
     
     {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11291496-1824871578503201.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11291496-1824871578503201.jpg",
         name:"iS Clinical Cleansing Complex",
         price:"45.00",
         product_type:"",
@@ -341,7 +341,7 @@ product=[
     
     {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11288881-1144871571568377.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11288881-1144871571568377.jpg",
         name:"NuFACE Mini Facial Toning Device",
         price:"209.00",
         product_type:"",
@@ -352,7 +352,7 @@ product=[
     
     {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/13305177-1144931095030761.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/13305177-1144931095030761.jpg",
         name:"Sulwhasoo Bloomstay Vitalizing Cream 50ml",
         price:"155.00",
         product_type:"",
@@ -362,7 +362,7 @@ product=[
     },
     {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289088-6444876993407084.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289088-6444876993407084.jpg",
         name:"PCA SKIN Nutrient Toner",
         price:"42.00",
         product_type:"",
@@ -374,7 +374,7 @@ product=[
       
     {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11363398-3584901839298679.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11363398-3584901839298679.jpg",
         name:"The Ordinary Niacinamide 10% + Zinc 1% High Strength Vitamin and Mineral Blemish Formula 30ml",
         price:"6.50",
         product_type:"",
@@ -384,7 +384,7 @@ product=[
     },
      {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/13206070-6364898325936423.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/13206070-6364898325936423.jpg",
         name:"Omorovicza Evening CBD Facial Set",
         price:"281.40",
         product_type:"",
@@ -394,7 +394,7 @@ product=[
     },
     {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/13516546-2844930071318699.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/13516546-2844930071318699.jpg",
         name:"SkinCeuticals Phyto A+ Brightening Treatment 3 oz",
         price:"105.00",
         product_type:"Skincare",
@@ -404,7 +404,7 @@ product=[
     },
       {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/10915787-1224882139201778.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/10915787-1224882139201778.jpg",
         name:"Sunday Riley Good Genes All-In-One Lactic Acid Treatment 1oz",
         price:"68.00",
         product_type:"",
@@ -414,7 +414,7 @@ product=[
     },
      {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289630-1114892772061416.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289630-1114892772061416.jpg",
         name:"SkinCeuticals Phyto+ 30ml",
         price:"87.00",
         product_type:"Correct",
@@ -424,7 +424,7 @@ product=[
     },
       {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11724091-6114853912559885.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11724091-6114853912559885.jpg",
         name:"BABOR Ampoule Hydra Plus 7 x 2ml",
         price:"29.95",
         product_type:"AMPOULE CONCENTRATES",
@@ -434,7 +434,7 @@ product=[
     },
       {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11370303-1394876993507764.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11370303-1394876993507764.jpg",
         name:"EltaMD UV Clear Broad-Spectrum SPF46",
         price:"37.00",
         product_type:"",
@@ -444,7 +444,7 @@ product=[
     },
      {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11370309-1794866342158184.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11370309-1794866342158184.jpg",
         name:"EltaMD UV Aero Broad-Spectrum SPF45",
         price:"34.50",
         product_type:"",
@@ -455,7 +455,7 @@ product=[
     
     {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11290635-1804892767902966.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11290635-1804892767902966.jpg",
         name:"SkinCeuticals Triple Lipid Restore 2:4:2",
         price:"130.00",
         product_type:"Correct",
@@ -467,7 +467,7 @@ product=[
     
     {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/13507090-6724918929137595.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/13507090-6724918929137595.jpg",
         name:"Glo Skin Beauty HA-Revive Hyaluronic Hydrator 50ml",
         price:"78.00",
         product_type:"",
@@ -478,7 +478,7 @@ product=[
     
     {
         
-        image_link:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/13305187-1604931097281379.jpg",
+        api_featured_image:"https://static.thcdn.com/images/large/webp//productimg/1600/1600/13305187-1604931097281379.jpg",
         name:"Sulwhasoo Concentrated Ginseng Renewing Water 125ml",
         price:"5",
         product_type:"82.00",
@@ -530,6 +530,10 @@ product=[
                 return b.price - a.price
             })
         }
+        else if(selected=="default")
+        {
+            return
+        }
         appenddata(product,parent);
      
     }
@@ -544,7 +548,7 @@ product=[
       data.forEach((element)=> {
         //   if(element.category!=="")
         //   {  
-            if(element.=="EltaMD")
+            if(element.product_type=="")
             {
                 let div=document.createElement("div");
         div.style.padding="6px";
@@ -557,7 +561,7 @@ product=[
         div1.style.display="flex";
         div1.style.justifyContent="space-around";
         let image=document.createElement("img");
-        image.src=element.image_link;
+        image.src=element.api_featured_image;
         let wish=document.createElement("img");
         wish.setAttribute("id","wish")
         wish.src="wish.jpg";

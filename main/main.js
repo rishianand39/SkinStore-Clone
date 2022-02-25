@@ -1,7 +1,4 @@
 
-//
-
-// product.innerHTML="hello check check check";
 async function MakeApiCall(url)
 {
     try{
@@ -14,13 +11,6 @@ async function MakeApiCall(url)
        console.log("error",error);
     }
 }
-
-//  MakeApiCall("product");
-
-
-
-
-
 
  function appenddata(data,parent){
      parent.innerHTML="";
