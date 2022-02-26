@@ -7,6 +7,7 @@
     <title>Skin Cleansers</title>
     <link rel="stylesheet" href="./css file/style.css">
     <link rel="stylesheet" href="/navbar/scripts/main.css">
+    <link rel="stylesheet" href="/footer/scripts/main.css">
 
 </head>
 <body>
@@ -96,8 +97,10 @@
         </div>
         <br>
 
-
     </div>
+
+    <div id="footer-outer-div"></div>
+
 </body>
 </html>
 <!-- <script src="./ViewAllSkincare.js"></script> -->
@@ -105,4 +108,6 @@
 <script type="module">
        import navbar from "/navbar/components/navbar.js"; 
   document.querySelector("#navbar-outer-div").innerHTML = navbar();
+  import footer from "/footer/components/footer.js"; 
+  document.querySelector("#footer-outer-div").innerHTML = footer();
    </script>

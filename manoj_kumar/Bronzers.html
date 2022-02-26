@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css file/style.css">
 
     <link rel="stylesheet" href="/navbar/scripts/main.css">
+    <link rel="stylesheet" href="/footer/scripts/main.css">
     
 
 </head>
@@ -51,6 +52,10 @@
         <br>
 
     </div>
+
+
+
+    <div id="footer-outer-div"></div>
 </body>
 </html>
 <!-- <script src="./ViewAllSkincare.js"></script> -->
@@ -64,6 +69,9 @@
 // navbar
 import navbar from "/navbar/components/navbar.js"; 
   document.querySelector("#navbar-outer-div").innerHTML = navbar();
+
+  import footer from "/footer/components/footer.js"; 
+  document.querySelector("#footer-outer-div").innerHTML = footer();
 
 
 import selectoption from "./javascriptfiles/select.js";
