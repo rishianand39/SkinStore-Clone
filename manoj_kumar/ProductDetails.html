@@ -35,8 +35,11 @@
             cursor: pointer;
         }
     </style>
+    <link rel="stylesheet" href="/navbar/scripts/main.css">
+
 </head>
 <body>
+    <div id="navbar"> </div>
     <div id="productdetailscont">
         <div id="leftcont">
          
@@ -50,6 +53,12 @@
 </body>
 </html>
 <!-- <script src="./javascriptfiles/productDetails.js"></script> -->
+
+<script type="module">
+      import navbar from "/navbar/components/navbar.js"; 
+   document.querySelector("#navbar").innerHTML = navbar();
+
+</script>
 
 <script>
 let product_dtails=JSON.parse(localStorage.getItem("clicked_details"));

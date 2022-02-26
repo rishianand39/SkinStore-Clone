@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skin Cleansers</title>
     <link rel="stylesheet" href="./css file/style.css">
+    <link rel="stylesheet" href="/navbar/scripts/main.css">
 
 </head>
 <body>
+    <div id="navbar"> </div>
     <div id="productcontainer">
         <div id="titlebar">
             <div><h1>Skin Cleansers</h1></div>
@@ -100,3 +102,7 @@
 </html>
 <!-- <script src="./ViewAllSkincare.js"></script> -->
 <script src="./javascriptfiles/Clean_Skincar.js"></script>
+<script type="module">
+    import navbar from "/navbar/components/navbar.js"; 
+   document.querySelector("#navbar").innerHTML = navbar();
+   </script>

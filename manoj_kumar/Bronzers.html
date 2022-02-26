@@ -7,13 +7,13 @@
     <title>Bronzers product</title>
     <link rel="stylesheet" href="./css file/style.css">
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    <link rel="stylesheet" href="/navbar/scripts/main.css">
     />
 
 </head>
 <body>
+
+  <div id="navbar"> </div>
     <div id="productcontainer">
         <div id="titlebar">
             <div><h1>Bronzers</h1></div>
@@ -61,6 +61,9 @@
 
 
 <script type="module">
+// navbar
+import navbar from "/navbar/components/navbar.js"; 
+   document.querySelector("#navbar").innerHTML = navbar();
 
 import selectoption from "./javascriptfiles/select.js";
 // console.log(selectoption);

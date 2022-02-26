@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Skin Care Products</title>
     <link rel="stylesheet" href="./css file/style.css">
+    <link rel="stylesheet" href="/navbar/scripts/main.css">
 
 </head>
 <body>
+    <div id="navbar"> </div>
     <div id="productcontainer">
         <div id="titlebar">
             <div><h1>New Skin Care Products</h1></div>
@@ -66,6 +68,9 @@
 
 
     <script type="module">
+
+import navbar from "/navbar/components/navbar.js"; 
+   document.querySelector("#navbar").innerHTML = navbar();
 
         import selectoption from "./javascriptfiles/select.js";
         // console.log(selectoption);
