@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="home.css" rel="stylesheet">
+    <link rel="stylesheet" href="/navbar/scripts/main.css" />
 </head>
 <style>
 
 </style>
 <body>
+    <div id="navbar-outer-div"></div>
 
     <br><div id="upper_text"><h2>15% off with code SS15 + Alpha-H 5 Piece Set (Worth $114) @ $150 | Shop now</h2></div>
     <div id="main">
@@ -19,9 +21,9 @@
         </div>
         <br><div class="LOGO">
             
-                <a href=""><img class="logotag" src="./logo/maybelline.png"></a>
-                <a href=""><img class="logotag" src="./logo/pacifica.jpg"></a>
-                <a href="./productpages/dior.html"><img class="logotag" src="./logo/dior.png"></a>
+                <a href="/productpages/mayblin.html"><img class="logotag" src="./logo/maybelline.png"></a>
+                <a href="/productpages/Pacifica.html"><img class="logotag" src="./logo/pacifica.jpg"></a>
+                <a href="/productpages/dior.html"><img class="logotag" src="./logo/dior.png"></a>
                 <a><img class="logotag" src="./logo/image5.webp"></a>
                 <a><img class="logotag" src="./logo/image6.webp"></a>
                 <a><img class="logotag" src="./logo/image7.webp"></a>
@@ -35,8 +37,8 @@
 
             <div class="div_box1"">
 
-                <img class="image_box1"
-                src="./TopImg/Timg1.webp" alt="image">
+                <a href="/productpages/SkinCeuticals.html"><img class="image_box1"
+                src="./TopImg/Timg1.webp" alt="image"></a>
             
                 <span class="para1_sec"><h4>SkinCeuticals Gift</h4></span>
                 <p class="sentence_sec">Free SkinCeuticals Tripeptide R Neck Repair
@@ -47,8 +49,8 @@
 
             <div class="div_box1">
 
-                <img class="image_box1"
-                src="./TopImg/Timg2.webp" alt="image">
+                <a href="/productpages/SkinMedica.html"><img class="image_box1"
+                src="./TopImg/Timg2.webp" alt="image"></a>
             
                 <span class="para1_sec"><h4>25% off Grow Gorgeous + Gift</h4></span>
                 <p class="sentence_sec">Enjoy 25% off Grow Gorgeous and receive a Grow Gorgeous Detoxifying 
@@ -251,9 +253,16 @@
                 
         </section>
     </div>
+
     
 </body>
 </html>
-<script src="home.js">
+<script src="home.js"></script>
+<script type="module">
+
+import navbar from "/navbar/components/navbar.js"; 
+  document.querySelector("#navbar-outer-div").innerHTML = navbar();
+
+    // console.log(navbar)
 
 </script>

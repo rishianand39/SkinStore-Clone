@@ -84,9 +84,19 @@ function navbar() {
             <div class="dropdown">
                 <button class="dropbtn">Makeup</button>
                 <div class="dropdown-content">
+<<<<<<< HEAD
                     <a href="#">Link 1</a>
                     <a href="#">Link 2</a>
                     <a href="#">Link 3</a>
+=======
+                    <a href="">View All Cousmetics</a>
+                    <a href="#">Eye Liners</a>
+                    <a href="#">Lash & Brow Enhancers</a>
+                    <a href="#">Eye Shadows</a>
+                    <a href="#">Maskaras</a>
+                    <a href="#">Brow Pencils</a>
+                    
+>>>>>>> 2afd3a0fe80a9a416e6f93c27c9e5209ef431887
                 </div>
             </div>
             <div class="dropdown">
