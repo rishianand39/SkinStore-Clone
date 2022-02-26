@@ -74,6 +74,33 @@ function navbar() {
                 </div>
             </div>
             <div class="dropdown">
+                <button class="dropbtn">Makeup</button>
+                <div class="dropdown-content">
+                    <a href="/manoj_kumar/View_All_Cosmetics.html">View All Cousmetics</a>
+                    <a href="/manoj_kumar/Eyeshadow.html">Eye Shadows</a>
+                    <a href="/manoj_kumar/Mascaras.html">Maskaras</a>
+                    <a href="/manoj_kumar/Bronzers.html">Bronzers </a>
+                    <a href="/manoj_kumar/Face Powders.html">Face Powders</a>
+                    <a href="/manoj_kumar/foundation.html">Foundations</a>
+                    <a href="/manoj_kumar/Lip_liners.html">Lips Liners</a>
+                    <a href="/manoj_kumar/Lipsticks.html">Lipsticks</a> 
+                    <a href="/manoj_kumar/Liquid_Lipstick.html">Liquid Lipsticks</a> 
+
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Skin Care</button>
+                <div class="dropdown-content">
+                <a href="/manoj_kumar/ViewAllSkincare.html">View All Skin Care</a>
+                <a href="/manoj_kumar/NewIn.html">New In</a>
+                <a href="/manoj_kumar/Clean_Skincare.html">Clear SkinCare</a>
+                <a href="#">5*Rated Products</a>
+                <a href="#">Gifts & Sets</a>
+                <a href="#">Supersizes & Duo</a>
+                <a href="#">Travel Sizes</a>          
+                </div>
+          </div>
+            <div class="dropdown">
                 <button class="dropbtn">Sale</button>
                 <div class="dropdown-content">
                     <a href="#">Sale</a>
@@ -95,20 +122,7 @@ function navbar() {
                    
                 </div>
             </div>
-            <div class="dropdown">
-                <button class="dropbtn">Skin Care</button>
-                <div class="dropdown-content">
-                <a href="#">View All Skin Care</a>
-                <a href="#">New In</a>
-                <a href="#">Clear SkinCare</a>
-                <a href="#">5*Rated Products</a>
-                <a href="#">Gifts & Sets</a>
-                <a href="#">Supersizes & Duo</a>
-                <a href="#">Travel Sizes</a>
-                
-                    
-                </div>
-            </div>
+         
             <div class="dropdown">
                 <button class="dropbtn">Hair</button>
                 <div class="dropdown-content">
@@ -123,18 +137,7 @@ function navbar() {
                     <a href="#">Hair Thinning & Loss</a>
                 </div>
             </div>
-            <div class="dropdown">
-                <button class="dropbtn">Makeup</button>
-                <div class="dropdown-content">
-                    <a href="#">View All Cousmetics</a>
-                    <a href="#">Eye Liners</a>
-                    <a href="#">Lash & Brow Enhancers</a>
-                    <a href="#">Eye Shadows</a>
-                    <a href="#">Maskaras</a>
-                    <a href="#">Brow Pencils</a>
-                    
-                </div>
-            </div>
+            
             <div class="dropdown">
                 <button class="dropbtn">Tools</button>
                 <div class="dropdown-content">
