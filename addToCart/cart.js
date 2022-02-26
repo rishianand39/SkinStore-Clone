@@ -1,19 +1,19 @@
-var cartitems = JSON.parse(localStorage.getItem("CartItems"));
+var cart_arr = JSON.parse(localStorage.getItem("cart_arr"));
 
-displayCart(cartitems);
+displayCart(cart_arr);
 
-function displayCart(cartitems) {
+function displayCart(cart_arr) {
     document.querySelector("tbody").textContent = "";
     cartitems.map(function(data, index) {
         var tr = document.createElement("tr");
 
         var td1 = document.createElement("td");
         var img = document.createElement("img");
-        img.setAttribute("src", data.image);
+        img.setAttribute("src", data.api_featured_image);
         td1.append(img);
 
         var td2 = document.createElement("td");
-        td2.textContent = data.name;
+        td2.textContent = data.brand;
 
         var td3 = document.createElement("td");
         td3.textContent = "1";
@@ -39,17 +39,17 @@ function displayCart(cartitems) {
 
 function deleteItems(index) {
     cartitems.splice(index, 1);
-    localStorage.setItem("CartItems", JSON.stringify(cartitems));
-    displayCart(cartitems);
+    localStorage.setItem("cart_arr", JSON.stringify(cart_arr));
+    displayCart(cart_arr);
 }
 
 // show total Price
-var total = cartitems.reduce(function(acc, cv) {
+var total = cart_arr.reduce(function(acc, cv) {
     return acc + Number(cv.price);
 }, 0);
 
 document.querySelector("#subtotal").textContent = `Sub-Total: RS ${total}.00`;
-document.querySelector("#total-item").textContent= `Total Item: ${cartitems.length}`
+document.querySelector("#total-item").textContent= `Total Item: ${cart_arr.length}`
 document.querySelector("#total").textContent = `Total: RS ${total}.00`;
 
 // Apply Coupon here
