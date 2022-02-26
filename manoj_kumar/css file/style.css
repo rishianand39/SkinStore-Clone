@@ -1,6 +1,7 @@
 *{
     margin: 0;
-    /* padding: .5%; */
+    padding: 0;
+    /* width: 100%; */
 }
 #sidebar{
     display: flex;
@@ -22,11 +23,11 @@
     
 }
 img{
-   /* padding: 0 50px; */
-   text-align: center;
+ 
+   /* text-align: center;
    width: 70%;
    height: 170px;
-   border-radius: 10%;
+   border-radius: 10%; */
 }
 #sidebar{
     height: 40px;
