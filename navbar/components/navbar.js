@@ -32,7 +32,7 @@ function navbar() {
                         <img src="/image/profile-icon.png" alt="" class="cart-icon" /> Account
                     </div>
                 </a>
-                <a href="">
+                <a href="/addToCart/cart.html">
                     <div class="ac-cart-div flex-div">
                         <img src="/image/cart-icon.jpg" alt="" class="cart-icon" /> Cart
                     </div>
