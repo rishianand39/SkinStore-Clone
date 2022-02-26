@@ -198,6 +198,7 @@ function  addtocartt(elem){
     cart.push(elem);
     localStorage.setItem("cart_arr",JSON.stringify(cart));
     alert("Successfully item added to cart");
+    window.location.href="/addToCart/cart.html"
     // console.log(cart);
 //    window.location.href="manojcart.html";
 }
