@@ -564,6 +564,10 @@ const product=[
         div1.style.justifyContent="space-around";
         let image=document.createElement("img");
         image.src=element.api_featured_image;
+        image.style.textAlign="center";
+        image.style.width="70%";
+        image.style.height="170px";
+        image.style.borderRadius="10%";
         let wish=document.createElement("img");
         wish.setAttribute("id","wish")
         wish.src="wish.jpg";

@@ -27,6 +27,10 @@ async function MakeApiCall(url)
     div1.style.display="flex";
     div1.style.justifyContent="space-around";
     let image=document.createElement("img");
+    image.style.textAlign="center";
+    image.style.width="70%";
+    image.style.height="170px";
+    image.style.borderRadius="10%";
     image.src=element.api_featured_image;
     let wish=document.createElement("img");
     wish.setAttribute("id","wish")
