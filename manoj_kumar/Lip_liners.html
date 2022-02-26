@@ -10,7 +10,8 @@
 
 </head>
 <body>
-    <div id="navbar"> </div>="productcontainer">
+  <div id="navbar-outer-div"></div>
+    <div id="productcontainer">
         <div id="titlebar">
             <div><h1>Lip Liners</h1></div>
             <p id="count">Result</p>
@@ -76,7 +77,7 @@
 <script type="module">
 
 import navbar from "/navbar/components/navbar.js"; 
-   document.querySelector("#navbar").innerHTML = navbar();
+  document.querySelector("#navbar-outer-div").innerHTML = navbar();
 
 import selectoption from "./javascriptfiles/select.js";
 // console.log(selectoption);

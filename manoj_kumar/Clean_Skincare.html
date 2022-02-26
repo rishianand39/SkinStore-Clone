@@ -10,7 +10,7 @@
 
 </head>
 <body>
-    <div id="navbar"> </div>
+    <div id="navbar-outer-div"></div>
     <div id="productcontainer">
         <div id="titlebar">
             <div><h1>Skin Cleansers</h1></div>
@@ -103,6 +103,6 @@
 <!-- <script src="./ViewAllSkincare.js"></script> -->
 <script src="./javascriptfiles/Clean_Skincar.js"></script>
 <script type="module">
-    import navbar from "/navbar/components/navbar.js"; 
-   document.querySelector("#navbar").innerHTML = navbar();
+       import navbar from "/navbar/components/navbar.js"; 
+  document.querySelector("#navbar-outer-div").innerHTML = navbar();
    </script>
