@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="home.css" rel="stylesheet">
+    <link rel="stylesheet" href="/navbar/scripts/main.css" />
 </head>
 <style>
 
 </style>
 <body>
+    <div id="navbar-outer-div"></div>
 
     <br><div id="upper_text"><h2>15% off with code SS15 + Alpha-H 5 Piece Set (Worth $114) @ $150 | Shop now</h2></div>
     <div id="main">
@@ -251,9 +253,16 @@
                 
         </section>
     </div>
+
     
 </body>
 </html>
-<script src="home.js">
+<script src="home.js"></script>
+<script type="module">
+
+import navbar from "/navbar/components/navbar.js"; 
+  document.querySelector("#navbar-outer-div").innerHTML = navbar();
+
+    // console.log(navbar)
 
 </script>
