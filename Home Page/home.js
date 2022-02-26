@@ -6,10 +6,9 @@ var time = 4000;
 
 //IMAGES LIST
 
-images[0] = "sliding1.webp";
-images[1] = "sliding2.webp";
-images[2] = "sliding3.webp";
-images[3] = "sliding4.webp";
+images[0] = "slidingImage1.PNG";
+images[1] = "slidingImage2.PNG";
+images[2] = "slidingImage3.PNG";
 
 
 //change image
