@@ -95,7 +95,7 @@ async function MakeApiCall(url)
     localStorage.setItem("cart_arr",JSON.stringify(cart));
     alert(" Successfully item added to cart");
     // console.log(cart);
-   window.location.href="manojcart.html";
+//    window.location.href="manojcart.html";
 }
 
 
