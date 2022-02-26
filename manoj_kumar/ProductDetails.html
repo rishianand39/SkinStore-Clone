@@ -36,6 +36,7 @@
         }
     </style>
     <link rel="stylesheet" href="/navbar/scripts/main.css">
+    <link rel="stylesheet" href="/footer/scripts/main.css">
 
 </head>
 <body>
@@ -49,6 +50,7 @@
 
         </div>
     </div>
+    <div id="footer-outer-div"></div>
     
 </body>
 </html>
@@ -58,6 +60,8 @@
        import navbar from "/navbar/components/navbar.js"; 
   document.querySelector("#navbar-outer-div").innerHTML = navbar();
 
+  import footer from "/footer/components/footer.js"; 
+  document.querySelector("#footer-outer-div").innerHTML = footer();
 </script>
 
 <script>

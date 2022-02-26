@@ -67,3 +67,9 @@ document.querySelector("form").addEventListener("submit", function(event) {
         alert("Please enter correct coupon no.");
     }
 });
+document.querySelector("#btnck").addEventListener("submit", proceed);
+function proceed(event){
+    event.preventDefault();
+    alert("Proceeding to bill");
+    window.location.href = "/AddressPage/address.html";
+}
