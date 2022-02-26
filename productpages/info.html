@@ -11,6 +11,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="/navbar/scripts/main.css" />
+    <link rel="stylesheet" href="/footer/scripts/main.css">
     <style>
         #infocontainer{
             display:  flex;
@@ -71,11 +72,14 @@
       </div>
       <img src="./images/Screenshot (60).png" alt=""  id="static">
     </div>
+    <div id="footer-outer-div"></div>
   </body>
 </html>
 <script type="module">
     import navbar from "/navbar/components/navbar.js"; 
   document.querySelector("#navbar-outer-div").innerHTML = navbar();
+  import footer from "/footer/components/footer.js"; 
+  document.querySelector("#footer-outer-div").innerHTML = footer();
   import select from "./components/select.js";
   let select_div = document.getElementById("select");
   select_div.innerHTML = select();
