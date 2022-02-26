@@ -36,7 +36,7 @@ const mapData = (userData, email, password) => {
             console.log(element.email);
             console.log(element.password);
             flag = true;
-            window.location.href = "/index.html";
+            window.location.href = "/Home Page/index.html";
             return;
         }
     });
