@@ -16,7 +16,7 @@ function navbar() {
     <div>
         <div id="navbar">
             <div id="logo-div">
-                <a href="#">
+                <a href="/Home page/index.html">
                     <img id="logo" src="https://s1.thcdn.com/enterprise/assets/skstr-global-113e023e-ecc9-45df-abad-eb92ce1956c9-logo-default.svg" alt="Navbar-logo" />
                 </a>
             </div>

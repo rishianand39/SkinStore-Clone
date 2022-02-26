@@ -48,9 +48,9 @@ var total = cartitems.reduce(function(acc, cv) {
     return acc + Number(cv.price);
 }, 0);
 
-document.querySelector("#subtotal").textContent = `Sub-Total: RS ${total}.00`;
+document.querySelector("#subtotal").textContent = `Sub-Total: ₹ ${75*total}.00`;
 document.querySelector("#total-item").textContent= `Total Item: ${cartitems.length}`
-document.querySelector("#total").textContent = `Total: RS ${total}.00`;
+document.querySelector("#total").textContent = `Total: ₹ ${total*75}.00`;
 
 // Apply Coupon here
 
@@ -60,8 +60,8 @@ document.querySelector("form").addEventListener("submit", function(event) {
     var coupon_no = document.querySelector("#Coupon").value;
     if (coupon_no == "masai30") {
         total = total - Math.floor((30 / 100) * total);
-        document.querySelector("#subtotal").textContent = `Sub-Total: RS ${total}.00`;
-        document.querySelector("#total").textContent = `Total: RS ${total}.00`;
+        document.querySelector("#subtotal").textContent = `Sub-Total: ₹  ${total*75}.00`;
+        document.querySelector("#total").textContent = `Total: ₹ ${total*75}.00`;
         alert("Coupon Applied Successfully");
     } else {
         alert("Please enter correct coupon no.");
