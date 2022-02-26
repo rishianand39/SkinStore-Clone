@@ -7,6 +7,8 @@
     <title>Document</title>
     <link href="home.css" rel="stylesheet">
     <link rel="stylesheet" href="/navbar/scripts/main.css" />
+    <link rel="stylesheet" href="/footer/scripts/main.css">
+
 </head>
 <style>
 
@@ -15,6 +17,7 @@
     <div id="navbar-outer-div"></div>
 
     <br><div id="upper_text"><h2>15% off with code SS15 + Alpha-H 5 Piece Set (Worth $114) @ $150 | Shop now</h2></div>
+   
     <div id="main">
     <br><div id="img1">
         <img name="slide" id="img1">
@@ -252,9 +255,12 @@
             </div>
                 
         </section>
-    </div>
+   <br></div>
+    <hr>
+    <br>
+    <br>
+    <br><div id="footer-outer-div"></div>
 
-    
 </body>
 </html>
 <script src="home.js"></script>
@@ -262,6 +268,10 @@
 
 import navbar from "/navbar/components/navbar.js"; 
   document.querySelector("#navbar-outer-div").innerHTML = navbar();
+
+  import footer from "/footer/components/footer.js"; 
+  document.querySelector("#footer-outer-div").innerHTML = footer();
+
 
     // console.log(navbar)
 

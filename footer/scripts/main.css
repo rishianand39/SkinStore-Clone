@@ -1,6 +1,13 @@
 hr {
     border: 0.5px solid gray;
 }
+a{
+    color: white;
+    text-decoration: none;
+}
+btnId:hover{
+    background-color: skyblue;
+}
 
 #footer {
     width: 85%;

@@ -59,7 +59,7 @@ document.querySelector("form").addEventListener("submit", function(event) {
 
     var coupon_no = document.querySelector("#Coupon").value;
     if (coupon_no == "masai30") {
-        total = Math.floor((30 / 100) * total);
+        total = total - Math.floor((30 / 100) * total);
         document.querySelector("#subtotal").textContent = `Sub-Total: RS ${total}.00`;
         document.querySelector("#total").textContent = `Total: RS ${total}.00`;
         alert("Coupon Applied Successfully");

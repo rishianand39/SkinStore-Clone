@@ -3,7 +3,7 @@ function footer() {
     <div id="footer1">
         <div id="sign">
             <h4>Sign up to our email list and receive 20% off your next order</h4>
-            <button>SIGN UP</button>
+            <button id="btnId"><a href="/Account/register.html">SIGN UP</a></button>
         </div>
         <hr>
         <div>
