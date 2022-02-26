@@ -91,6 +91,7 @@ function append(data,parent)
             localStorage.setItem("cart_arr",JSON.stringify(cart_arr))
            
             alert(`Add To Cart Successfull`)
+            window.location.href="/addToCart/cart.html"
         })
         
         cart.setAttribute("id","cart")
