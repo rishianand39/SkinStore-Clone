@@ -1,4 +1,4 @@
-var cartitems = JSON.parse(localStorage.getItem("CartItems"));
+var cartitems = JSON.parse(localStorage.getItem("cart_arr"));
 
 displayCart(cartitems);
 
@@ -9,7 +9,7 @@ function displayCart(cartitems) {
 
         var td1 = document.createElement("td");
         var img = document.createElement("img");
-        img.setAttribute("src", data.image);
+        img.setAttribute("src", data.api_featured_image);
         td1.append(img);
 
         var td2 = document.createElement("td");
@@ -19,10 +19,10 @@ function displayCart(cartitems) {
         td3.textContent = "1";
 
         var td4 = document.createElement("td");
-        td4.textContent = "RS" + " " + data.price + ".00";
+        td4.textContent = "$" + " " + data.price + ".00";
 
         var td5 = document.createElement("td");
-        td5.textContent = "RS" + " " + data.price + ".00";
+        td5.textContent = "$" + " " + data.price + ".00";
 
         var td6 = document.createElement("td");
         td6.innerHTML = "Delete";
