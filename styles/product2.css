@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* width: 100%; */
+}
+#sidebar{
+    display: flex;
+    gap: 30px;
+    /* justify-content: space-around; */
+}
+#product{
+    display: grid;
+    grid-template-columns:repeat(4,22%);
+    /* grid-gap:3%; */
+    grid-row-gap: 30px;
+    grid-column-gap: 3%;
+    /* overflow: hidden; */
+  
+}
+#product>div{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+   
+    
+}
+img{
+ 
+   /* text-align: center;
+   width: 70%;
+   height: 170px;
+   border-radius: 10%; */
+}
+#sidebar{
+    height: 40px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-top: 1px solid green ;
+    border-bottom: 1px solid green;
+    margin-left: 3%;
+}
+#sidebar>select,input{
+    padding:10px 10px 10px 10px;
+}
+#sidebar>div>select>option{
+   color: blueviolet;
+   font-size: large;
+   border: 1px solid red;
+}
+/* #test{
+    width: 100px;
+    height: 1000px;
+} */
+#wish{
+    width: 30px;
+    height: 30px;
+    margin:0%;
+    border-radius: 30%;
+}
+#wish:hover{
+    width: 50px;
+    height: 50px;
+}
+#titlebar{
+    margin-bottom: 1%;
+}
+.heddis{
+    display: flex;
+}
+.hed1{
+    flex: 7;
+}
+.head2{
+    flex: 3;
+    margin-top: 30%;
+}
+/* style butoon */
+a {
+text-decoration: none;
+display: inline-block;
+padding: 8px 16px;
+}
+
+a:hover {
+background-color: #ddd;
+color: black;
+}
+.previous {
+background-color: #f1f1f1;
+color: black;
+}
+
+.next {
+background-color: #04AA6D;
+/* background-color: rgba(211, 186, 186, 0.705); */
+color: white;
+}
+
+
+
+@media only screen and (min-width:699px) and (max-width:1000px){
+    #product{
+        grid-template-columns:repeat(4,1fr);
+        /* display: none; */
+    }
+    #sidebar{
+        display: none;
+    }
+    
+
+}
+
+@media only screen and (min-width:550px) and (max-width:700px){
+    #product{
+        grid-template-columns:repeat(3,33%);
+        /* display: none; */
+    }
+    #sidebar{
+        display: none;
+    }
+}
+    
+    @media only screen and (min-width:344px) and (max-width:550px){
+        #product{
+            grid-template-columns:repeat(2,1fr);
+            /* display: none; */
+        }
+        #sidebar,.hed1{
+            display: none;
+        }
+
+
+}
+@media only screen and (min-width:0px) and (max-width:344px){
+    #product{
+        grid-template-columns:repeat(1,1fr);
+    }
+    #sidebar{
+        display: none;
+    }
+    #sidebar,.hed1{
+        display: none;
+    }
+
+}

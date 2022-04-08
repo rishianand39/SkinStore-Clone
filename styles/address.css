@@ -1,0 +1,201 @@
+*{
+    margin: 0px;
+    margin: 0px;
+}
+body{
+    font-family: 'Barlow', sans-serif;
+}
+label{
+    font-size: 20px;
+    /* font-weight: bold; */
+}
+input{
+    height: 50px;
+    width: 90%;
+    /* margin-top: 5px; */
+    margin-bottom: 15px;
+
+}
+select{
+    height: 55px;
+    width: 610px;
+}
+#radio-button{
+    /* display: flex; */
+    height: 20px;
+    width: 20px;
+}
+.home{
+    display: flex;
+    margin: 5px;
+}
+.office{
+    display: flex;
+    margin-right: 100px;
+}
+
+  
+  .pro-pay:hover {
+    background-color: #45a049;
+    color: #161616;
+  }
+.pro-pay{
+    height: 55px;
+    width: 610px;
+    background-color: orange;
+    font-size: 17px;
+}
+.exp{
+    height: 55px;
+    width: 90px;
+    margin-right:50px ;
+}
+.checkbox{
+    display: flex;
+}
+p{
+    margin-right: 20px;
+}
+.ship-your-order{
+    display: flex;
+    height: 80px;
+    width: 600px;
+    font-size: 17px;
+    /* margin: auto; */
+    /* justify-content: center; */
+
+}
+img{
+    height: 40px;
+    width: 40px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+#main-form{
+    /* width: 50%; */
+    /* height: 100%; */
+    padding-left: 5%;
+    
+}
+#state{
+    width: 90%;
+}
+
+hr{
+    background-color: grey;
+}
+
+span>p{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 70px;
+}
+.wide-box1{
+    border: 2px solid tomato;
+    height: 60px;
+    width: 400px;
+    justify-items: center;
+    align-items: center;
+    font-size: 17px;
+    color: grey;
+    /* margin: auto; */
+    padding: 10px;
+    padding-left: 50px;
+    margin-left: 70px;
+    background-color: rgb(250, 249, 244);
+}
+.wide-box{
+    display: flex;
+    margin-bottom: 80px;
+}
+#id_1{
+    grid-area: a;
+    height: 100%;
+}
+
+#id_2{
+    grid-area: b;
+    height: 100%;
+}
+#main{
+    
+    display: flex;
+
+}
+#main1 {
+    width: 40%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    margin-left:40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: auto;
+    border-radius: 5px;
+
+}
+
+#main2{
+    width: 35%;
+    padding-left: 25px;
+   
+    display: flex;
+
+}
+
+#sumbitbtn{
+    width: 92%;
+}
+/*---------------------------------shop box-------------------------------------->*/
+#lsdiv{
+width: 38%;
+
+}
+#lsdiv1{
+width: 60%;
+padding-left: 40px;
+margin-left: 40px;
+
+
+}
+#flex{
+display: flex;
+flex-wrap: wrap;
+box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+}
+#id1{
+height: auto;
+width: 30%;
+
+
+}
+#id2{
+width: 59%;       
+margin-left: 40px;
+}
+
+#flex{
+
+display: flex;
+width: 400px;
+margin-bottom: 10px;
+}
+#id1>iMG{
+width: 70%;
+height: 90%;
+
+}
+#A{
+display: flex;
+justify-content: space-around;
+box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+#B{
+display: flex;
+justify-content: space-around;
+box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+#C{
+display: flex;
+justify-content: space-around;
+box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}

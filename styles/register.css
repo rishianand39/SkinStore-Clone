@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f2f2;
+    margin: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+nav {
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+#navbar {
+    height: 80px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+}
+
+#navbar img {
+    width: 200px;
+}
+
+
+/*---------------form--------------------------  */
+
+#register-form {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    /* border: 1px solid red; */
+    width: 40%;
+    margin: 20px auto;
+    padding: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 5px 0 25px;
+    font-size: 18px;
+    padding: 15px 20px;
+}
+
+label {
+    margin-bottom: 4px;
+}
+
+span {
+    margin: 5px 0 25px;
+}
+
+#referal {
+    display: flex;
+    flex-direction: column;
+}
+
+#form-heading {
+    font-size: 30px;
+}
+
+.sign-up-with {
+    font-size: 20px;
+}
+
+#sign-face-google-div {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+    padding: 10px;
+}
+
+#sign-face-google-div a {
+    display: flex;
+    align-items: center;
+    border: 1px solid grey;
+    padding: 1% 8%;
+    margin: 0 5px;
+    font-size: 18px;
+}
+
+#sign-face-google-div a:hover {
+    background: #f2f2f2;
+    border: 1px solid #ffffff;
+}
+
+.login-icon {
+    margin: 0;
+}
+
+input[type="submit"] {
+    background: #2e3337;
+    border: 0;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: teal;
+    color: #2e3337;
+}
+
+.term-cond-link {
+    font-size: 18px;
+    color: #000011;
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 850px) {
+    #register-form {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 499px) {
+    #register-form {
+        width: 80%;
+    }
+    #sign-face-google-div {
+        flex-wrap: wrap;
+    }
+    #sign-face-google-div a {
+        width: 153px;
+        margin-bottom: 10px;
+    }
+}
+
+.message {
+    color: red;
+}

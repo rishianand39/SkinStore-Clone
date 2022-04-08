@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f2f2;
+    margin: 0;
+}
+
+nav {
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+#navbar-login {
+    cursor: pointer;
+    height: 80px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+}
+
+#navbar-login img {
+    width: 200px;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+}
+.new-customer{
+    margin:80px 4% ;
+    height: 100px;
+    background: #ffffff;
+    padding: 1% 2% 5%;
+    width: 25%;
+    
+}
+
+#register-btn{
+    background: #2e3337;
+    border: 0;
+    color: white;
+    font-size: 18px;
+    padding: 3% 30%;
+    cursor: pointer;
+
+}
+#register-btn:hover{
+    background: teal;
+    color: #2e3337;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    /* font-size: 22px; */
+}
+
+form input {
+    height: 35px;
+    padding: 5px 10px;
+    font-size: 20px;
+    margin: 5px 0 18px;
+}
+
+input[type="submit"] {
+    background: #2e3337;
+    border: 0;
+    color: white;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 35px;
+}
+
+input[type="submit"]:hover {
+    background: teal;
+    color: #2e3337;
+}
+
+#login {
+    /* margin: 50px auto; */
+    padding: 1% 2% 5%;
+    width: 25%;
+    background: #ffffff;
+    margin:80px 4% ;
+
+}
+
+.log-face-google {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+}
+
+.login-with-img {
+    width: 150px;
+}
+
+a {
+    border: 1px solid rgb(190, 190, 190);
+    margin: 0 1%;
+}
+
+a:hover {
+    border: 1px solid rgb(26, 24, 24);
+}
+
+span {
+    margin: 5px 0 25px;
+}
+
+.message {
+    color: red;
+}
+
+
+/*----------------- Responsive part------------- */
+
+@media only screen and (min-width: 850px) and (max-width: 1280px) {
+    #login {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 850px) {
+    #login {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 450px) {
+    #login {
+        width: 90%;
+    }
+    .log-face-google {
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .log-face-google a {
+        margin: 10px;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 860px) {
+    .new-customer{
+        display: none;
+    }
+  
+}
