@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkinMedica</title>
+    <link rel="stylesheet" href="./styles/product.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles//footer.css" />
+  </head>
+  <body>
+    <div id="navbar-outer-div"></div>
+    <div id="discription">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNXTVXE8dsIHK5NMTLX62Xh1PeQyJRt4UxXg&usqp=CAU" alt="">
+        <h4>
+            It has many time-tested heroes, praised by dermatologists, editors, and real reviewers just like you. These products have a huge fan base for good reason: SkinCeuticals' offerings are science-backed with top proven ingredients and cutting-edge technology, meaning they really work.A leading authority in protective and corrective skin care, SkinMedica offers a complete line of medical grade skin care. Backed by two decades of research, these advanced products have been formulated to promote the long-term health of your skin</h4>
+      </div>
+    <div id="maincontainer">
+      <div id="select"></div>
+
+      <div id="container"></div>
+    </div>
+    <div id="footer-outer-div"></div>
+  </body>
+</html>
+<script type="module">
+     import navbar from "./components/navbar.js"; 
+  document.querySelector("#navbar-outer-div").innerHTML = navbar();
+  import footer from "./components/footer.js";
+  document.querySelector("#footer-outer-div").innerHTML = footer();
+  import select from "./scripts/select.js";
+  import { APIcall1, append1 } from "./scripts/product.js";
+  let select_div = document.getElementById("select");
+
+  select_div.innerHTML = select();
+
+  
+  let res = await APIcall1("https://skinstoreproject.herokuapp.com/product3");
+
+console.log(res);
+let parent = document.getElementById("container");
+append1(res, parent);
+
+let ele = document.getElementById("priceSort1");
+ele.addEventListener("change", function () {
+  let v = document.getElementById("priceSort1").value;
+  if (v == "low") {
+    res.sort(function (a, b) {
+      return a.priceOfProduct - b.priceOfProduct;
+    });
+  }
+  if (v == "high") {
+    res.sort(function (a, b) {
+      return b.priceOfProduct - a.priceOfProduct;
+    });
+  }
+
+  //  console.log(res)
+  append1(res, parent);
+});
+</script>

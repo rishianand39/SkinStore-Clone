@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pay.css">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link rel="stylesheet" href="./styles/navbar.css">
+  <link rel="stylesheet" href="./styles/address.css" />
+</head>
+<body>
+    <div id="navbar-outer-div"></div>
+    <h2 style="text-align: center;" id="h2">Ship your order to Select a payment method</h2>
+    <div id="mainContainer">
+        <div id="container1">
+       <div class="ship-your-order">
+           <input type="radio" id="radio-button" name="pay">
+           <img src="https://cdn-icons-png.flaticon.com/128/633/633611.png" alt="">
+                <span><label for="">Credit / Debit Card</label> </span>
+
+                <input type="radio" id="radio-button" name="pay">
+                <img src="https://icon-library.com/images/cash-on-delivery-icon/cash-on-delivery-icon-7.jpg" alt="">
+                <span><label for="radio-button">Cash On Delivery</label></span> 
+                 <input type="radio" id="radio-button" name="pay"> 
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc5EO1okTG7kgfTNYxW2svD6hXA_lk0r4UmA&usqp=CAU" alt="">
+                   <span><label for="">EMI</label> </span>
+               
+        </div>  
+           <div id="payid2">    
+               <span><h3 style="color: blueviolet;">Use you Credit or Debit card</h3> 
+               <span> <label for="radio-button">Credit Card</label>
+               <input type="radio" value="Creditcard" name="online" id="radio-button"> </span>
+          
+         
+               <label for="radio-button">Debit Carde</label>
+               <input type="radio" value="Debitcard" name="online"  id="radio-button"> <br>
+          </div>
+   
+   <br><br><br>
+<div id="cartMainContainer">
+   <div id="cardContent">
+       <h2 >Card-Details</h2>
+       <br>
+   <form  id="main-form">
+      
+   <label for="cd">Card Number</label><br>
+   <input type="number" id="cd" placeholder="Enter your 16 digit card number"><br>
+   <label for="ncd">Name on Card</label><br>
+   <input type="text" id="ncd" placeholder="Name on card">
+   <div>
+       <label for="expy">Card expire date</label> <br>
+       <select class="expd" name="Month" aria-placeholder="MM" id="expy">
+           <option>Month</option>
+           <option value="01">01</option>
+           <option value="02">02</option>
+           <option value="03">03</option>
+           <option value="04">04</option>
+           <option value="05">05</option>
+           <option value="06">06</option>
+           <option value="07">07</option>
+           <option value="08">08</option>
+           <option value="09">09</option>
+           <option value="10">10</option>
+           <option value="11">11</option>
+           <option value="12">12</option>
+       </select>
+
+       <select class="expd" name="Year" aria-placeholder="YYYY" >
+           <option>Year</option>
+           <option value="2022">2022</option>
+           <option value="2023">2023</option>
+           <option value="2024">2024</option>
+           <option value="2025">2025</option>
+           <option value="2026">2026</option>
+           <option value="2027">2027</option>
+           <option value="2028">2028</option>
+           <option value="2029">2029</option>
+           <option value="2030">2030</option>
+           <option value="2031">2031</option>
+           <option value="2032">2032</option>
+           <option value="2033">2033</option>
+           <option value="2034">2034</option>
+           <option value="2035">2035</option>
+           <option value="2036">2036</option>
+           <option value="2037">2037</option>
+           <option value="2038">2038</option>
+           <option value="2039">2039</option>
+       </select> <br> <br>
+       <label for="cvv">Enter CVV No.</label> <br>
+       <input type="number" placeholder="CVV" class="cv" id="cvv">
+   </div>
+
+   <div class="checkbox">
+      <input type="checkbox" class="exp"><p>Save this card for a faster checkout experience </p>
+   </div>
+   <div class="checkbox">
+       <input type="checkbox" class="exp">
+           <p>Is billing address the same as shipping address?</p>
+   </div>
+   
+</div>
+<br>
+
+</form>
+<div id="formdiv">
+   <form id="form1" >
+   
+   <input type="submit" name="" id="submit" placeholder="proceed" class="pro-pay"> 
+</form>
+</div>
+</div> <!-- cartmaincontainer div end-->
+
+<div id="paylogos"> <h2>Ways you can pay:</h2>
+   <img src="https://i1.lmsin.net/website_images/ae/checkout/logo-visa.png" alt="">
+   <img src="https://i1.lmsin.net/website_images/ae/checkout/logo-mc.png" alt="">
+   <img src="https://i1.lmsin.net/website_images/in/checkout/logo-rupay.svg" alt="">
+   <!-- <img src="https://i1.lmsin.net/website_images/ae/checkout/logo-cash.png" alt=""> -->
+   <img src="https://i1.lmsin.net/website_images/in/checkout/logo-netbanking.svg" alt="">
+   <img src="https://i1.lmsin.net/website_images/in/checkout/logo-wallet.svg" alt="">
+   <img src="https://i1.lmsin.net/website_images/in/checkout/logo-rewards.svg" alt="">
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc5EO1okTG7kgfTNYxW2svD6hXA_lk0r4UmA&usqp=CAU" alt="">
+   </div>
+</div>
+   <div id="container2">
+       <div id="lsdiv"></div>
+       <div id="lsdiv1"> 
+           <h3 style="text-align: center; color: purple;"  >Your Order Summary</h3>
+           <br>
+           <hr>
+
+       </div>
+   </div>
+   
+
+
+
+</div>
+</body>
+<script src="./scripts/pay.js"></script>
+</html>
+<script type="module">
+    import navbar from './components/navbar.js'
+    document.querySelector("#navbar-outer-div").innerHTML = navbar();
+    
+    </script>

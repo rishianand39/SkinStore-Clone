@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      rel="icon"
+      href="https://s1.thcdn.com/enterprise/assets/skstr-global-0ac8b07e-22db-4a8e-a16e-76e6407a52de-logo-favicon.png"
+    />
+    <link rel="stylesheet" href="./styles/login.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div id="navbar-login">
+        <img
+          src="https://s1.thcdn.com/enterprise/assets/skstr-global-113e023e-ecc9-45df-abad-eb92ce1956c9-logo-default.svg"
+          alt="Navbar-logo"
+        />
+      </div>
+    </nav>
+
+    <div id="container">
+      <div id="login">
+        <h2>Existing Customers</h2>
+        <form action="">
+          <label for="email">*Email address</label>
+          <input type="email" id="email" />
+          <span class="message" id="eml"> </span>
+
+          <label for="password">*Password</label>
+          <input type="password" id="password" />
+          <span class="message" id="pass"> </span>
+
+          <p>FORGOTTEN YOUR PASSWORD?</p>
+          <input type="submit" value="SIGN IN" />
+          <p>or,Continue with</p>
+          <div class="log-face-google">
+            <a href="#">
+              <img
+                src="image/facebook-login-img.png"
+                alt=""
+                class="login-with-img"
+              />
+            </a>
+            <a href="https://projectskinstore.herokuapp.com/auth/google">
+              <img
+                src="image/google-login-img.png"
+                alt=""
+                class="login-with-img"
+              />
+            </a>
+          </div>
+        </form>
+      </div>
+
+      <div class="new-customer">
+        <h2>New Customers</h2>
+        <button id="register-btn" onclick="register()">REGISTER</button>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./scripts/login.js"></script>

@@ -1,0 +1,200 @@
+/* #maincontainer{
+    display: flex;
+    flex-direction: column;
+} */
+#Yourcart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 1px solid gray; */
+    width: 95%;
+    margin: auto;
+    width: 90%;
+    
+
+}
+#h1{
+font-family: "Lato-Regular",Helvetica,Arial,sans-serif;
+font-size: 36px;
+line-height: 1.2;
+color: #2e3337;
+font-weight: 400;
+margin-bottom: 0;
+}
+.btn {
+    background-color: #161616;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 16%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+    color: #161616;
+  }
+
+/* Below navbar */
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/*Heading
+ shopping cart */
+
+#head {
+    display: grid;
+    grid-template-columns: 90%;
+    background-color: #5a6981;
+    color: white;
+    padding: 0 10px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+#head>p {
+    /* border: 1px solid red; */
+    margin: 10px 0;
+    display: inline-block;
+    width: fit-content;
+}
+
+
+/* Table for cart items */
+
+table {
+    color: black;
+    padding: 0 10px;
+    width: 81%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th {
+    /* border: 1px solid red; */
+    padding: 10px 30px;
+    background-color: #a9b8c0;
+    color: white;
+}
+
+tr,
+td {
+    text-align: center;
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+td:nth-child(1) {
+    width: 40px;
+}
+
+td:nth-child(2) {
+    color: #2eb990;
+    font-weight: bold;
+}
+
+td:nth-child(6) {
+    cursor: pointer;
+    background-color: rgb(161, 159, 159);
+}
+
+td:nth-child(6):hover {
+    background-color: rgb(20, 147, 220);
+    color: white;
+    font-size: 22px;
+    box-sizing: content-box;
+}
+
+
+/* CartItems Image styling here */
+
+img {
+    width: 30px;
+}
+
+#cart-bottom-btn {
+    /* border: 1px solid crimson; */
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+button {
+    background-color: #2eb990;
+    border: 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+#btnck{
+    width: 15%;
+    height: 60px;
+}
+#btnsp{
+    background-color: #5a6981;
+    color: #0c0909;
+}
+
+
+/* Apply Coupon Code here */
+
+#Coupon-div {
+    /* background-color: red; */
+    color: white;
+    /* padding: 0 10px; */
+    width: 81%;
+    margin: 30px auto;
+}
+
+#Coupon {
+    padding: 8px;
+    font-size: 16px;
+    width: 20%;
+    margin-left: 0;
+    /* vertical-align: middle; */
+}
+
+input[type="submit"] {
+    font-size: 16px;
+    border-radius: 4px;
+    border: 0;
+    width: 15%;
+    /* height: 100%; */
+    padding: 10px;
+    background-color: #2eb990;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #5a6981;
+}
+
+
+/* Total Price here */
+
+#total-div {
+    display: grid;
+    grid-template-columns: 90%;
+    background-color: #e9e3e3; 
+    color: black;
+    padding: 0 10px;
+    width: 80%;
+    margin: 20px auto;
+    /* border: 1px solid red; */
+}
+
+#paylogos{
+    margin-bottom: 140px;
+    margin-left: 650px;
+    }
+/* Footer */

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page</title>
+    <script src="https://kit.fontawesome.com/c83c965a44.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+
+</head>
+
+<body>
+    <div id="navbar-outer-div"></div>
+
+    <!-- below navbar -->
+    <div> 
+        
+        <div id="Yourcart">
+            <h1 #h1>Your Cart</h1>
+    <button type="submit" class="btn"> Checkout Securely Now </button>
+
+
+</div>
+
+    <!-- middle navbar -->
+    <div id="container">
+        <div id="head">
+            <p>Shopping Cart</p>
+        </div>
+
+        <div class="tableheading">
+            <table>
+                <thead class="carttable">
+                    <tr>
+                        <th>Image</th>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Unit Price</th>
+                        <th>Total</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <div id="head">
+            <p>What would you like to do next?</p>
+        </div>
+
+        <div id="Coupon-div">
+            <form action="">
+                <input id="Coupon" type="text" placeholder="Enter Your Coupon here" />
+                <input type="submit" value="Apply" />
+            </form>
+        </div>
+
+        <div id="total-div">
+            <p id="total-item"></p>
+            <p class="subtotal"></p>
+            <p id="total"></p>
+        </div>
+
+        <div id="cart-bottom-btn">
+             <button  class="btn"  id="btnsp"><a href="./index.html">Continue Shoping</a></button>
+            <button class="btn" type="submit" id="btnck"><a href="./address.html">Checkout Securely Now</button></a>
+        </div>
+        <div id="paylogos"> <h2>Ways you can pay:</h2>
+            <img src="https://i1.lmsin.net/website_images/ae/checkout/logo-visa.png" alt="">
+            <img src="https://i1.lmsin.net/website_images/ae/checkout/logo-mc.png" alt="">
+            <img src="https://i1.lmsin.net/website_images/in/checkout/logo-rupay.svg" alt="">
+            <!-- <img src="https://i1.lmsin.net/website_images/ae/checkout/logo-cash.png" alt=""> -->
+            <img src="https://i1.lmsin.net/website_images/in/checkout/logo-netbanking.svg" alt="">
+            <img src="https://i1.lmsin.net/website_images/in/checkout/logo-wallet.svg" alt="">
+            <img src="https://i1.lmsin.net/website_images/in/checkout/logo-rewards.svg" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc5EO1okTG7kgfTNYxW2svD6hXA_lk0r4UmA&usqp=CAU" alt="">
+            </div>
+         </div>
+    </div>
+
+    <!-- Footer -->
+    
+</body>
+
+</html>
+<script type="module">
+import navbar from './components/navbar.js'
+document.querySelector("#navbar-outer-div").innerHTML = navbar();
+
+</script>
+<script src="./scripts/cart.js"></script>
