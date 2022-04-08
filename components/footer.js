@@ -1,96 +1,108 @@
 function footer() {
     return `<div id="footer">
-    <div id="footer1">
-        <div id="sign">
-            <h4>Sign up to our email list and receive 20% off your next order</h4>
-            <button id="btnId"><a href="/Account/register.html">SIGN UP</a></button>
-        </div>
-        <hr>
+    <hr />
+    <div class="footer-1 universal-margin">
+      <div class="register-div">
+        <h4>Sign up to our email list and receive 20% off your next order</h4>
+        <button id="register-btn">SIGNUP</button>
+      </div>
+      <div class="social">
+        <h4>Connect with us</h4>
         <div>
-            <h4>Help & Information</h4>
-            <div class="klass">
-                <img src="https://cdn1.iconfinder.com/data/icons/material-communication/18/phone-512.png" alt="">
-                <p>Customer Service</p>
-            </div>
-            <div class="klass">
-                <img src="https://cdns.iconmonstr.com/wp-content/assets/preview/2017/240/iconmonstr-delivery-1.png" alt="">
-                <p>Delivery Information</p>
-            </div>
-            <div class="klass">
-                <img src="https://pic.onlinewebfonts.com/svg/img_225047.png" alt="">
-                <p>Returns & Refunds</p>
-            </div>
-            <div class="klass">
-                <img src="https://icons.veryicon.com/png/o/miscellaneous/eva-icon-fill/question-mark-15.png" alt="">
-                <p>Help Center</p>
-            </div>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-pinterest"></i>
+          <i class="fa-brands fa-snapchat"></i>
         </div>
-        <h4>COVID-19 Information</h4>
-        <h4>Accessibility</h4>
+      </div>
     </div>
-    <div id="footer2">
-        <div id="connect">
-            <div><h4>Connect with us</h4></div>
-            <div id="connectimg">
-                <img src="https://brandlogos.net/wp-content/uploads/2021/04/facebook-icon.png" alt="Facebook">
-                <img src="https://pngfreeimg.com/wp-content/uploads/2021/02/Instagram-Icon.png" alt="Instagram">
-                <img src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-bird-symbols-png-logo-0.png" alt="Twitter">
-                <img src="https://i.pinimg.com/originals/d3/d1/75/d3d175e560ae133f1ed5cd4ec173751a.png" alt="Pinterest">
-                <img src="https://pngshare.com/wp-content/uploads/2021/05/Print-Snapchat-Logo-18.png" alt="Snapchat">
-            </div>
-            
-        </div>
-        <div id="detail">
-            <div class="detaildiv">
-                <hr>
-                <h4>About SkinStore</h4>
-                <p>About Us</p>
-                <p>Affiliate Program</p>
-                <p>Brand Directory</p>
-                <p>Coupon Codes</p>
-                <p>Refer A Friend</p>
-                <p>Student Discount</p>
-                <p>Join SkinStore Experts</p>
+    <hr />
+    <div class="footer-middle universal-margin">
+      <div>
+        <h3>Help & Information</h3>
+        <a href=""> <i class="fa-solid fa-phone"></i>Customer Service</a>
+        <br />
+        <a href=""><i class="fa-solid fa-truck"></i>Delivery Information</a>
+        <br />
+        <a href=""><i class="fa-solid fa-arrows-rotate"></i>Return & Refund</a>
+        <br />
+        <a href=""><i class="fa-solid fa-question"></i>Help Center</a>
+        <br />
+        <a href="">Covid-19 Informatin</a>
+        <br />
+        <a href="">Accessibility</a>
+        <br />
+      </div>
 
-            </div>
-            <div class="detaildiv">
-                <hr>
-                <h4>Legal</h4>
-                <p>Cookie Information</p>
-                <p>Privacy Policy</p>
-                <p>Terms & Conditions</p>
-                <p>Modern Slavery Statement</p>
-            </div>
-            <div class="detaildiv">
-                <hr>
-                <h4>How to Contact Us</h4>
-                <p>Message Us</p>
-                <p>Free Beauty Consultations</p>
-            </div>
-        </div>
+      <div>
+        <h3>About SkinStore</h3>
+        <a href="">About Us</a>
+        <br />
+        <a href="">Affiliated Program</a>
+        <br />
+        <a href="">Brand Directory</a>
+        <br />
+        <a href="">Coupon Codes</a>
+        <br />
+        <a href="">Refer a Friend</a>
+        <br />
+        <a href="">Student Discount</a>
+        <br />
+        <a href="">Join SkinStore Experts</a>
+        <br />
+        <br />
+      </div>
+
+      <div>
+        <h3>Legal</h3>
+        <a href="">Cookie Information</a>
+        <br />
+        <a href="">Privacy Policy</a>
+        <br />
+        <a href="">Terms and conditions</a>
+        <br />
+        <a href="">Modern Slavery Information</a>
+        <br />
+      </div>
+
+      <div>
+        <h3>How To Contact Us</h3>
+        <a href="">Message Us</a>
+        <br />
+        <a href="">Free Beauty Consultations</a>
+        <br />
+      </div>
     </div>
-</div>
-<hr>
-<div id="lastfoot">
-    <div id="blf">
+    <hr />
+    <div class="footer-bottom universal-margin">
+      <div>
         <h1>T H G</h1>
-        <p>2022 The Hut.com Ltd.</p>
-    </div>
-    <div id="lfimg">
-        <h4>Pay securely with</h4>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Visa.svg/1200px-Visa.svg.png" alt="">
-        <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/072016/untitled-1_137.png?itok=_QrtgEVI" alt="">
-        <img src="https://play-lh.googleusercontent.com/I4PUA84FZYcguGIlQyr6doTVTU4JTpOlJWXkriB_g_VNvx9gCfI6S_B--TgZcULpeZbk" alt="">
-        <img src="https://icon-library.com/images/diners-club-icon/diners-club-icon-3.jpg" alt="">
-        <img src="https://icon-library.com/images/discover-card-icon/discover-card-icon-14.jpg" alt="">
-        <img src="https://seekvectorlogo.com/wp-content/uploads/2019/09/maestro-vector-logo-small.png" alt="">
-        <img src="https://logos-world.net/wp-content/uploads/2020/04/PayPal-Logo-2007-2014.png" alt="">
-        <img src="https://cdn.worldvectorlogo.com/logos/alipay-logo.svg" alt="">
-        <img src="https://logowik.com/content/uploads/images/afterpay-new-20215837.jpg" alt="">
-        <img src="https://mumbrella.com.au/wp-content/uploads/2021/07/Zip-logo-16-9-e1626913893928.png" alt="">
-        <img src="https://getlogo.net/wp-content/uploads/2021/06/sezzle-logo-vector.png" alt="">
+        <span>2022 &#169; The Hut.com Ltd.</span>
+      </div>
+      <div>
+        <h4>Pay Securely with</h4>
+        <br>
+        <img class="pay-logo"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Visa.svg/200px-Visa.svg.png"
+          alt=""
+        />
+        <img class="pay-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mastercard_2019_logo.svg/120px-Mastercard_2019_logo.svg.png" alt="" />
+        <img class="pay-logo" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcThC3MnJY_sXM2ccJ6hE54S-E2rtYcczvTCQLxrIyP3JYuml4Ao" alt="">
+        <img class="pay-logo" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSMas2R8qt2RDX6hwGQjPDVg1kYmFcydl35Pprn7dnnHB7dvRss" alt="">
+        <img class="pay-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_HaHIiFwEohhGcGHcRXvomCIlMi_mTiUk1do9P-JvbXxOoihh" alt="">
+        <img class="pay-logo" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-BOGsOqwGaEesjA4NTy4Kc89Vlzueic7X7YrqJrB71e7u2vRZ" alt="">
+        <img class="pay-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRpMl7SyvncuxWwpMqMiNAfoUVYJi7tQD_peB20oVEGAVbu7az" alt="">
+        <img class="pay-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToUzDlWnOuQRnWAgEg_ESG5PgctNdBVIqP2hISgLZWnB8srYjY" alt="">
+        <img class="pay-logo" src="http://t1.gstatic.com/images?q=tbn:ANd9GcT7gJntTdPlNjzUbPkj3q2uOn9VybEYLf7BGkcYvUkjD65eEcmK" alt="">
+        <img class="pay-logo" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqD86s-T0M_YmX50QEq7pFvB-G7fgz1LtAxGPYeyMcUciuStZU" alt="">
+        <img class="pay-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVYZiYRp9D8N74OB7RGYMKXvMmi0-OzJDaK9kjhPdQ-1afEAwJ" alt="">
+        <img class="pay-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiHHeNx0sHTWMGuEnenFpAIM4szi2p8_GmqNIDEgbYE8hylFFL" alt="">
+        <img class="pay-logo" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTR1b-W6vBGFlbE5tvzooYQYL-4EcnO8QKHrZkQrvpb5kpdvKsx" alt="">
     
+
+      </div>
     </div>
-</div>`;
+  </div>`;
 }
 export default footer;
